@@ -1,7 +1,7 @@
 # 01. Data Pipeline - Data Warehouse
 This repository holds all files and folders to create a data pipeline for transferring data from live SQL Server database to PostgreSQL data warehouse using ELT operation. The choice of ELT instead of ETL is performance-related as continuous transformation on live data before loading can hold the live database back in terms of performance, especially with many simultaneous users reading from and writing to the database.
 
-1. Environment Overview
+## 1. Environment Overview
 
 The architecture involves a Microsoft SQL Server (Source) and a PostgreSQL (Target) instance. To automate the ingestion, we utilize WSL2 (Ubuntu) to run pgloader scripts.
 Component	Technology	Role
@@ -9,7 +9,8 @@ Source RDBMS	MS SQL Server	Production Sales Data (dbc01y21 – dbc02y25)
 Target RDBMS	PostgreSQL 16+	Central Data Warehouse
 Orchestration	Bash / pgloader	Automated Batch Migration
 Network	WSL2 Bridge	Cross-environment communication
-2. Target Database & Medallion Schema Setup
+
+## 2. Target Database & Medallion Schema Setup
 
 First, initialize the Data Warehouse and establish the Medallion architecture (Bronze, Silver, Gold).
 Create the Data Warehouse
@@ -30,7 +31,7 @@ CREATE SCHEMA bronze; -- Raw, unaltered data from source
 CREATE SCHEMA silver; -- Cleaned, filtered, and joined data
 CREATE SCHEMA gold;   -- Aggregated, business-level metrics (Reporting)
 
-3. Source (MSSQL) Configuration
+## 3. Source (MSSQL) Configuration
 
 To allow pgloader to extract data, SQL Server must be configured for remote TCP/IP access and SQL Authentication.
 Enable TCP/IP & Static Port
@@ -57,7 +58,7 @@ Ensure Mixed Mode Authentication is enabled in SSMS.
 
     Ensure the user has db_datareader permissions on all source databases.
 
-4. Network Bridging (WSL2 to Windows Host)
+## 4. Network Bridging (WSL2 to Windows Host)
 
 Since the migration script runs in WSL2, you must punch a hole through the Windows Firewall and identify the host IP.
 Identify the Bridge IP
