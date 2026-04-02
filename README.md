@@ -67,7 +67,7 @@ In the WSL terminal, find the host gateway:
 Bash
 
 ip route show | grep default | awk '{print $3}'
-# Note the result (e.g., <ip address>)
+### Note the result (e.g., <ip address>)
 
 Open Firewall Ports
 
@@ -76,7 +76,7 @@ PowerShell
 
 New-NetFirewallRule -DisplayName "Allow DWH Migration" -Direction Inbound -LocalPort 5432, 1433 -Protocol TCP -Action Allow -Profile Any
 
-5. Automated Migration Script
+## 5. Automated Migration Script
 
 This Bash script loops through multiple yearly databases and appends them into the single PostgreSQL bronze schema.
 
@@ -85,7 +85,7 @@ Bash
 
 #!/bin/bash
 
-# 1. Configuration
+### 1. Configuration
 DATABASES=("dbc01y21" "dbc02y23" "dbc02y24" "dbc02y25")
 HOST_IP="gateway_ip" -- redacted IP address
 
@@ -96,7 +96,7 @@ PG_USER="username"
 PG_PASS="password"
 PG_DB="sales_DataWarehouse"
 
-# 2. Execution Loop
+### 2. Execution Loop
 for DB in "${DATABASES[@]}"; do
     echo "Ingesting Raw Data: $DB..."
 
@@ -115,7 +115,7 @@ EOF
     pgloader current_load.cfg
 done
 
-# 3. Cleanup
+### 3. Cleanup
 rm current_load.cfg
 echo "Bronze Layer Establishment Complete."
 
