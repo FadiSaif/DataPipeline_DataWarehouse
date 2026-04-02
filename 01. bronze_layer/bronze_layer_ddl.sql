@@ -1,9 +1,14 @@
 /*
 ============================================================================
--- PostgreSQL Schema Definitions: Bronze Layer (Batch 1)
--- Description: Accounts Payable, Accounts Receivable, Banking, and Customer 
---              master data tables.
--- ============================================================================
+PostgreSQL Schema Definitions: Bronze Layer (Batch 1)
+Description: Accounts Payable, Accounts Receivable, Banking, and Customer 
+             master data tables.
+============================================================================
+
+Script Purpose:
+    This script creates tables in the 'bronze' schema, dropping existing tables 
+    if they already exist.
+	Run this script to re-define the DDL structure of 'bronze' Tables 
 */
 
 -- Safely drop existing tables before creation to ensure a clean deployment
