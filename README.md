@@ -1,0 +1,2 @@
+# 01. Data Pipeline - Data Warehouse
+This repository holds all files and folders to create a data pipeline for transferring data from live SQL Server database to PostgreSQL data warehouse using ELT operation. The choice of ELT instead of ETL is performance-related as continuous transformation on live data before loading can hold the live database back in terms of performance, especially with many simultaneous users reading from and writing to the database.
