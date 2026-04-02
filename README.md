@@ -67,7 +67,7 @@ In the WSL terminal, find the host gateway:
 Bash
 
 ip route show | grep default | awk '{print $3}'
-# Note the result (e.g., 172.24.128.1)
+# Note the result (e.g., <ip address>)
 
 Open Firewall Ports
 
@@ -87,13 +87,13 @@ Bash
 
 # 1. Configuration
 DATABASES=("dbc01y21" "dbc02y23" "dbc02y24" "dbc02y25")
-HOST_IP="172.24.128.1" # Replace with your gateway IP
+HOST_IP="gateway_ip" -- redacted IP address
 
-MSSQL_USER="sa"
-MSSQL_PASS="YourPassword"
+MSSQL_USER="username"
+MSSQL_PASS="password"
 
-PG_USER="postgres"
-PG_PASS="YourPassword"
+PG_USER="username"
+PG_PASS="password"
 PG_DB="sales_DataWarehouse"
 
 # 2. Execution Loop
@@ -119,7 +119,7 @@ done
 rm current_load.cfg
 echo "Bronze Layer Establishment Complete."
 
-6. Verification & Validation
+## 6. Verification & Validation
 
 After running the script, verify the data integrity in the Bronze layer.
 Row Count Validation
@@ -141,9 +141,9 @@ Connectivity Troubleshooting
 
 If the migration fails, use nc (netcat) to test the pipes:
 
-    Test Postgres: nc -vz 172.24.128.1 5432
+    Test Postgres: nc -vz <ip address and port number>
 
-    Test MSSQL: nc -vz 172.24.128.1 1433
+    Test MSSQL: nc -vz <ip address and port number>
 
 References & Credible Sources
 
