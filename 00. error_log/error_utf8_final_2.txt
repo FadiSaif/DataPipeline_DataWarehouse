@@ -1,0 +1,382 @@
+﻿psql.exe : psql:02. silver_laye
+r/02_native_silver_constraints.
+sql:142: NOTICE:  constraint 
+"pk_ap_classification" of 
+relation "ap_classification" 
+does not exist, skipping
+At line:1 char:24
++ ... WORD='123'; & 
+"C:\Program Files\PostgreSQL\18
+\bin\psql.exe" -U postgr ...
++                 ~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~
+    + CategoryInfo          :  
+   NotSpecified: (psql:02. si  
+  lver...exist, skipping:Str   
+ ing) [], RemoteException
+    + FullyQualifiedErrorId :  
+   NativeCommandError
+ 
+psql:02. silver_layer/02_native
+_silver_constraints.sql:142: 
+NOTICE:  constraint 
+"pk_ap_invoice_detail" of 
+relation "ap_invoice_detail" 
+does not exist, skipping
+psql:02. silver_layer/02_native
+_silver_constraints.sql:142: 
+NOTICE:  constraint 
+"pk_ap_invoice_header" of 
+relation "ap_invoice_header" 
+does not exist, skipping
+psql:02. silver_layer/02_native
+_silver_constraints.sql:142: 
+NOTICE:  constraint 
+"pk_ar_invoice_detail" of 
+relation "ar_invoice_detail" 
+does not exist, skipping
+psql:02. silver_layer/02_native
+_silver_constraints.sql:142: 
+NOTICE:  constraint 
+"pk_ar_invoice_header" of 
+relation "ar_invoice_header" 
+does not exist, skipping
+psql:02. silver_layer/02_native
+_silver_constraints.sql:142: 
+NOTICE:  constraint 
+"pk_bank_account" of relation 
+"bank_account" does not exist, 
+skipping
+psql:02. silver_layer/02_native
+_silver_constraints.sql:142: 
+NOTICE:  constraint "pk_bank" 
+of relation "bank" does not 
+exist, skipping
+psql:02. silver_layer/02_native
+_silver_constraints.sql:142: 
+NOTICE:  constraint 
+"pk_classification_file" of 
+relation "classification_file" 
+does not exist, skipping
+psql:02. silver_layer/02_native
+_silver_constraints.sql:142: 
+NOTICE:  constraint 
+"pk_customer" of relation 
+"customer" does not exist, 
+skipping
+psql:02. silver_layer/02_native
+_silver_constraints.sql:142: 
+NOTICE:  constraint 
+"pk_delivery_charge_header" of 
+relation 
+"delivery_charge_header" does 
+not exist, skipping
+psql:02. silver_layer/02_native
+_silver_constraints.sql:142: 
+NOTICE:  constraint 
+"pk_gl_chart_of_accounts" of 
+relation 
+"gl_chart_of_accounts" does 
+not exist, skipping
+psql:02. silver_layer/02_native
+_silver_constraints.sql:142: 
+NOTICE:  constraint 
+"pk_gl_currency" of relation 
+"gl_currency" does not exist, 
+skipping
+psql:02. silver_layer/02_native
+_silver_constraints.sql:142: 
+NOTICE:  constraint 
+"pk_gl_exchange_rate" of 
+relation "gl_exchange_rate" 
+does not exist, skipping
+psql:02. silver_layer/02_native
+_silver_constraints.sql:142: 
+NOTICE:  constraint 
+"pk_gl_journal_detail" of 
+relation "gl_journal_detail" 
+does not exist, skipping
+psql:02. silver_layer/02_native
+_silver_constraints.sql:142: 
+NOTICE:  constraint 
+"pk_gl_journal_header" of 
+relation "gl_journal_header" 
+does not exist, skipping
+psql:02. silver_layer/02_native
+_silver_constraints.sql:142: 
+NOTICE:  constraint 
+"pk_country" of relation 
+"country" does not exist, 
+skipping
+psql:02. silver_layer/02_native
+_silver_constraints.sql:142: 
+NOTICE:  constraint 
+"pk_packing_type" of relation 
+"packing_type" does not exist, 
+skipping
+psql:02. silver_layer/02_native
+_silver_constraints.sql:142: 
+NOTICE:  constraint 
+"pk_price_history" of relation 
+"price_history" does not 
+exist, skipping
+psql:02. silver_layer/02_native
+_silver_constraints.sql:142: 
+NOTICE:  constraint 
+"pk_purchase_department" of 
+relation "purchase_department" 
+does not exist, skipping
+psql:02. silver_layer/02_native
+_silver_constraints.sql:142: 
+NOTICE:  constraint 
+"pk_purchase_order_detail" of 
+relation 
+"purchase_order_detail" does 
+not exist, skipping
+psql:02. silver_layer/02_native
+_silver_constraints.sql:142: 
+NOTICE:  constraint 
+"pk_purchase_order_header" of 
+relation 
+"purchase_order_header" does 
+not exist, skipping
+psql:02. silver_layer/02_native
+_silver_constraints.sql:142: 
+NOTICE:  constraint 
+"pk_sales_center" of relation 
+"sales_center" does not exist, 
+skipping
+psql:02. silver_layer/02_native
+_silver_constraints.sql:142: 
+NOTICE:  constraint 
+"pk_sales_order_detail" of 
+relation "sales_order_detail" 
+does not exist, skipping
+psql:02. silver_layer/02_native
+_silver_constraints.sql:142: 
+NOTICE:  constraint 
+"pk_sales_order_header" of 
+relation "sales_order_header" 
+does not exist, skipping
+psql:02. silver_layer/02_native
+_silver_constraints.sql:142: 
+NOTICE:  constraint 
+"pk_sales_quotation_header" of 
+relation 
+"sales_quotation_header" does 
+not exist, skipping
+psql:02. silver_layer/02_native
+_silver_constraints.sql:142: 
+NOTICE:  constraint 
+"pk_sales_representative" of 
+relation 
+"sales_representative" does 
+not exist, skipping
+psql:02. silver_layer/02_native
+_silver_constraints.sql:142: 
+NOTICE:  constraint 
+"pk_sales_invoice_expense" of 
+relation 
+"sales_invoice_expense" does 
+not exist, skipping
+psql:02. silver_layer/02_native
+_silver_constraints.sql:142: 
+NOTICE:  constraint 
+"pk_stock_area" of relation 
+"stock_area" does not exist, 
+skipping
+psql:02. silver_layer/02_native
+_silver_constraints.sql:142: 
+NOTICE:  constraint 
+"pk_stock_bin" of relation 
+"stock_bin" does not exist, 
+skipping
+psql:02. silver_layer/02_native
+_silver_constraints.sql:142: 
+NOTICE:  constraint 
+"pk_stock_classification" of 
+relation 
+"stock_classification" does 
+not exist, skipping
+psql:02. silver_layer/02_native
+_silver_constraints.sql:142: 
+NOTICE:  constraint 
+"pk_stock_cost_type" of 
+relation "stock_cost_type" 
+does not exist, skipping
+psql:02. silver_layer/02_native
+_silver_constraints.sql:142: 
+NOTICE:  constraint 
+"pk_stock_purchase_invoice" of 
+relation 
+"stock_purchase_invoice" does 
+not exist, skipping
+psql:02. silver_layer/02_native
+_silver_constraints.sql:142: 
+NOTICE:  constraint 
+"pk_stock_transaction_detail" 
+of relation 
+"stock_transaction_detail" 
+does not exist, skipping
+psql:02. silver_layer/02_native
+_silver_constraints.sql:142: 
+NOTICE:  constraint "pk_stock_f
+oreign_currency_price" of 
+relation 
+"stock_foreign_currency_price" 
+does not exist, skipping
+psql:02. silver_layer/02_native
+_silver_constraints.sql:142: 
+NOTICE:  constraint 
+"pk_stock_transaction_header" 
+of relation 
+"stock_transaction_header" 
+does not exist, skipping
+psql:02. silver_layer/02_native
+_silver_constraints.sql:142: 
+NOTICE:  constraint 
+"pk_stock_item" of relation 
+"stock_item" does not exist, 
+skipping
+psql:02. silver_layer/02_native
+_silver_constraints.sql:142: 
+NOTICE:  constraint 
+"pk_stock_item_photo" of 
+relation "stock_item_photo" 
+does not exist, skipping
+psql:02. silver_layer/02_native
+_silver_constraints.sql:142: 
+NOTICE:  constraint 
+"pk_stock_reorder_level" of 
+relation "stock_reorder_level" 
+does not exist, skipping
+psql:02. silver_layer/02_native
+_silver_constraints.sql:142: 
+NOTICE:  constraint 
+"pk_stock_unit_of_measure" of 
+relation 
+"stock_unit_of_measure" does 
+not exist, skipping
+psql:02. silver_layer/02_native
+_silver_constraints.sql:142: 
+NOTICE:  constraint 
+"pk_warehouse" of relation 
+"warehouse" does not exist, 
+skipping
+psql:02. silver_layer/02_native
+_silver_constraints.sql:142: 
+NOTICE:  constraint 
+"pk_supplier" of relation 
+"supplier" does not exist, 
+skipping
+psql:02. silver_layer/02_native
+_silver_constraints.sql:142: 
+NOTICE:  constraint 
+"pk_sys_user" of relation 
+"sys_user" does not exist, 
+skipping
+psql:02. silver_layer/02_native
+_silver_constraints.sql:142: 
+NOTICE:  constraint 
+"pk_tax_category" of relation 
+"tax_category" does not exist, 
+skipping
+psql:02. silver_layer/02_native
+_silver_constraints.sql:142: 
+NOTICE:  constraint 
+"pk_tax_period" of relation 
+"tax_period" does not exist, 
+skipping
+psql:02. silver_layer/02_native
+_silver_constraints.sql:142: 
+NOTICE:  constraint "fk_ap_invo
+ice_detail_ap_invoice_header_ph
+dr1" of relation 
+"ap_invoice_detail" does not 
+exist, skipping
+psql:02. silver_layer/02_native
+_silver_constraints.sql:142: 
+NOTICE:  constraint "fk_ar_invo
+ice_detail_ar_invoice_header_rh
+dr1" of relation 
+"ar_invoice_detail" does not 
+exist, skipping
+psql:02. silver_layer/02_native
+_silver_constraints.sql:142: 
+NOTICE:  constraint "fk_deliver
+y_charge_detail_delivery_charge
+_header_hghdr" of relation 
+"delivery_charge_detail" does 
+not exist, skipping
+psql:02. silver_layer/02_native
+_silver_constraints.sql:142: 
+NOTICE:  constraint "fk_gl_jour
+nal_detail_gl_journal_header_jr
+hdr" of relation 
+"gl_journal_detail" does not 
+exist, skipping
+psql:02. silver_layer/02_native
+_silver_constraints.sql:142: 
+NOTICE:  constraint "fk_purchas
+e_order_detail_purchase_order_h
+eader_puhdr" of relation 
+"purchase_order_detail" does 
+not exist, skipping
+psql:02. silver_layer/02_native
+_silver_constraints.sql:142: 
+NOTICE:  constraint "fk_sales_o
+rder_detail_sales_order_header_
+es_hd" of relation 
+"sales_order_detail" does not 
+exist, skipping
+psql:02. silver_layer/02_native
+_silver_constraints.sql:142: 
+NOTICE:  constraint "fk_sales_q
+uotation_detail_sales_quotation
+_header_es_qh" of relation 
+"sales_quotation_detail" does 
+not exist, skipping
+psql:02. silver_layer/02_native
+_silver_constraints.sql:142: 
+NOTICE:  constraint "fk_stock_b
+in_stock_unit_of_measure_units"
+ of relation "stock_bin" does 
+not exist, skipping
+psql:02. silver_layer/02_native
+_silver_constraints.sql:142: 
+NOTICE:  constraint "fk_stock_t
+ransaction_detail_stock_transac
+tion_header_sthdr" of relation 
+"stock_transaction_detail" 
+does not exist, skipping
+psql:02. silver_layer/02_native
+_silver_constraints.sql:142: 
+NOTICE:  constraint "fk_stock_f
+oreign_currency_price_stock_uni
+t_of_measure_units" of 
+relation 
+"stock_foreign_currency_price" 
+does not exist, skipping
+psql:02. silver_layer/02_native
+_silver_constraints.sql:142: 
+NOTICE:  constraint "fk_stock_i
+tem_replacement_stock_unit_of_m
+easure_units" of relation 
+"stock_item_replacement" does 
+not exist, skipping
+psql:02. silver_layer/02_native
+_silver_constraints.sql:142: 
+NOTICE:  constraint "fk_stock_i
+tem_photo_stock_unit_of_measure
+_units" of relation 
+"stock_item_photo" does not 
+exist, skipping
+psql:02. silver_layer/02_native
+_silver_constraints.sql:142: 
+NOTICE:  constraint "fk_stock_r
+eorder_level_stock_unit_of_meas
+ure_units" of relation 
+"stock_reorder_level" does not 
+exist, skipping
+DO
