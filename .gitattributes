@@ -1,2 +1,12 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+
+# 1. Force GitHub to include all .sql files in repo language statistics
+*.sql linguist-detectable=true
+
+# 2. Tell GitHub to treat .sql files as PL/pgSQL (PostgreSQL procedural language)
+*.sql linguist-language=PLpgSQL
+
+# 3. If you have specific ETL folders, explicitly target them
+silver_layer/*.sql linguist-detectable=true
+silver_layer/*.sql linguist-language=PLpgSQL
