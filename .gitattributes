@@ -5,7 +5,7 @@
 *.sql linguist-detectable=true
 
 # 2. Tell GitHub to treat .sql files as PL/pgSQL (PostgreSQL procedural language)
-*.sql linguist-language=PLpgSQL
+*.sql linguist-language=SQL
 
 # 3. If you have specific ETL folders, explicitly target them
 silver_layer/*.sql linguist-detectable=true
