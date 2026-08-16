@@ -1879,8 +1879,8 @@ CREATE TABLE bronze.sysuse (
     e_password VARCHAR(255),    -- E-signature or secondary password
     
     -- UI & Navigation Profile
-    formkey VARCHAR(255),       -- Authorized form keys
-    formsel VARCHAR(255),       -- Authorized form selections
+    formkey TEXT,               -- Authorized form keys
+    formsel TEXT,               -- Authorized form selections
     formname VARCHAR(255),      -- Landing/Default form name
     uslatin BOOLEAN,            -- Flag: Use Latin/English UI layout
     
@@ -1938,15 +1938,15 @@ CREATE TABLE bronze.sysuse (
     maxdsc NUMERIC(4,2),        -- Maximum allowable discount percentage
     maxfqty NUMERIC(6,2),       -- Maximum allowable foreign quantity entry
     currate NUMERIC(6,3),       -- Default assigned currency rate override
-    actallow VARCHAR(255),      -- CSV list of allowed GL accounts
+    actallow TEXT,              -- CSV list of allowed GL accounts
     openallow BOOLEAN,          -- Access: Opening balances
-    cstallow VARCHAR(255),      -- CSV list of allowed cost centers
-    usrbrn VARCHAR(255),        -- CSV list of allowed branch codes
-    uspright VARCHAR(255),      -- Specific rights matrix
-    uswhalw VARCHAR(255),       -- CSV list of allowed warehouses
-    uscntralw VARCHAR(255),     -- CSV list of allowed sales centers
-    usdptalw VARCHAR(255),      -- CSV list of allowed departments
-    ussctnalw VARCHAR(255),     -- CSV list of allowed sections
+    cstallow TEXT,              -- CSV list of allowed cost centers
+    usrbrn TEXT,                -- CSV list of allowed branch codes
+    uspright TEXT,              -- Specific rights matrix
+    uswhalw TEXT,               -- CSV list of allowed warehouses
+    uscntralw TEXT,             -- CSV list of allowed sales centers
+    usdptalw TEXT,              -- CSV list of allowed departments
+    ussctnalw TEXT,             -- CSV list of allowed sections
     
     -- Mobile, POS, & Hardware Integrations
     posuser BOOLEAN,            -- Flag: User operates POS interface
@@ -1979,7 +1979,7 @@ CREATE TABLE bronze.sysuse (
     max_fsh_printed NUMERIC(2,0), -- Max times user can print fiscal receipt
     
     -- Advanced & Contract Modules
-    web_rights VARCHAR(254),    -- JSON/CSV defining web portal rights
+    web_rights TEXT,            -- JSON/CSV defining web portal rights
     NorgstrNoSl BOOLEAN,        -- Restriction: No sales without register
     AlwChangeVAT BOOLEAN,       -- Permission: Manually change VAT rate
     blkassmbld BOOLEAN,         -- Flag: Block assembled items

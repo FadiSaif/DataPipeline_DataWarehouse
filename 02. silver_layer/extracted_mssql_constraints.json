@@ -1,0 +1,3533 @@
+{
+    "primary_keys": {
+        "apclass": [
+            "cl_company",
+            "cl_code"
+        ],
+        "apdtl": [
+            "dt_company",
+            "dt_type",
+            "dt_ref",
+            "dt_folio"
+        ],
+        "aphdr": [
+            "hd_company",
+            "hd_type",
+            "hd_ref"
+        ],
+        "apitemprice_dt": [
+            "company",
+            "cnt_ref",
+            "cnt_whno",
+            "cnt_cmbkey"
+        ],
+        "apitemprice_hd": [
+            "company",
+            "cnt_ref"
+        ],
+        "aplcrmt_dt": [
+            "cu_company",
+            "cu_code",
+            "cf_fcy",
+            "ref_id"
+        ],
+        "arch_offers_dt": [
+            "company",
+            "slcenter",
+            "ref",
+            "barcode"
+        ],
+        "arch_offers_dt_sub": [
+            "company",
+            "slcenter",
+            "ref",
+            "ms_barcode",
+            "barcode"
+        ],
+        "arch_offers_hd": [
+            "company",
+            "slcenter",
+            "ref"
+        ],
+        "archive_attachments": [
+            "company",
+            "fileguid"
+        ],
+        "ardtl": [
+            "dt_company",
+            "dt_type",
+            "dt_ref",
+            "dt_folio"
+        ],
+        "arhdr": [
+            "hd_company",
+            "hd_type",
+            "hd_ref"
+        ],
+        "aritemprice_dt": [
+            "company",
+            "cnt_ref",
+            "cnt_whno",
+            "cnt_cmbkey"
+        ],
+        "aritemprice_hd": [
+            "company",
+            "cnt_ref"
+        ],
+        "bkacct": [
+            "company",
+            "bkcode",
+            "actcode"
+        ],
+        "bkbank": [
+            "bkcode"
+        ],
+        "bkbnfch": [
+            "bcompany",
+            "bcode"
+        ],
+        "bktransx": [
+            "company",
+            "trtype",
+            "ref"
+        ],
+        "budget": [
+            "bucomp",
+            "buser",
+            "bufcy"
+        ],
+        "classfil": [
+            "cl_company",
+            "cl_code"
+        ],
+        "colors_txtile": [
+            "cl_code"
+        ],
+        "custel": [
+            "id"
+        ],
+        "customer": [
+            "cu_company",
+            "cu_code",
+            "cf_fcy"
+        ],
+        "customer_dtls": [
+            "bu_company",
+            "bu_code",
+            "bu_fcy"
+        ],
+        "customer_ei": [
+            "cu_company",
+            "cu_code",
+            "cf_fcy"
+        ],
+        "customer_opn": [
+            "cu_autokey"
+        ],
+        "delchghdr": [
+            "trx_id"
+        ],
+        "ecrpos": [
+            "trm_serial"
+        ],
+        "email": [
+            "type"
+        ],
+        "expense": [
+            "expcompany",
+            "expcode"
+        ],
+        "exporders_hd": [
+            "company",
+            "orderid"
+        ],
+        "expreplaced_dt": [
+            "company",
+            "glref",
+            "orderid"
+        ],
+        "expreplaced_hd": [
+            "company",
+            "glref"
+        ],
+        "exptype": [
+            "expcode"
+        ],
+        "expusers": [
+            "username"
+        ],
+        "expvatdtl": [
+            "company",
+            "orderid",
+            "expcode",
+            "folio"
+        ],
+        "f_assets": [
+            "company",
+            "fano"
+        ],
+        "f_class": [
+            "company",
+            "cmbkey"
+        ],
+        "f_cost": [
+            "company",
+            "fano",
+            "costtype"
+        ],
+        "f_dptproj": [
+            "company",
+            "msection",
+            "dptproj"
+        ],
+        "f_mainsections": [
+            "company",
+            "msection"
+        ],
+        "f_tables": [
+            "prefix",
+            "code",
+            "serial"
+        ],
+        "fadtl": [
+            "fd_company",
+            "fd_type",
+            "fd_ref",
+            "fd_folio"
+        ],
+        "fahdr": [
+            "fh_company",
+            "fh_type",
+            "fh_ref"
+        ],
+        "freplicate": [
+            "brnno"
+        ],
+        "fsiss_hd": [
+            "ref"
+        ],
+        "fsrcv_hd": [
+            "branch",
+            "trtype",
+            "ref"
+        ],
+        "glchart": [
+            "glkey",
+            "glcurrency"
+        ],
+        "glcstctr": [
+            "company",
+            "cscode"
+        ],
+        "glcurr": [
+            "curcode"
+        ],
+        "glfcimage_rate": [
+            "company",
+            "image_fc_usrid",
+            "image_fc_date",
+            "image_fc_srlno"
+        ],
+        "gljrdtl": [
+            "jdcomp",
+            "jdtype",
+            "jdref",
+            "jdfolio"
+        ],
+        "gljrhdr": [
+            "jhcomp",
+            "jhtype",
+            "jhref"
+        ],
+        "ht_amanat_log": [
+            "hc_amanat_id",
+            "hc_company"
+        ],
+        "ht_amanat_types": [
+            "code"
+        ],
+        "ht_area": [
+            "cmbkey"
+        ],
+        "ht_clients": [
+            "cl_code"
+        ],
+        "ht_clients_class": [
+            "code"
+        ],
+        "ht_clients_ei": [
+            "cl_cu_company",
+            "cl_code"
+        ],
+        "ht_floors": [
+            "code"
+        ],
+        "ht_idtypes": [
+            "code"
+        ],
+        "ht_jobtypes": [
+            "code"
+        ],
+        "ht_nationality": [
+            "code"
+        ],
+        "ht_pricetypes": [
+            "code"
+        ],
+        "ht_rent_adjustments": [
+            "ha_company",
+            "ha_trtype",
+            "ha_ref"
+        ],
+        "ht_rent_companions": [
+            "cn_company",
+            "cn_contract_no",
+            "cn_srlno"
+        ],
+        "ht_rent_contracts": [
+            "hc_company",
+            "hc_contract_no"
+        ],
+        "ht_rent_contracts_jv_dt": [
+            "ha_company",
+            "ha_trtype",
+            "ha_ref",
+            "folio"
+        ],
+        "ht_rent_contracts_jv_hd": [
+            "company",
+            "trtype",
+            "ref"
+        ],
+        "ht_rent_contracts_movements": [
+            "hc_trn_id",
+            "hc_company"
+        ],
+        "ht_rent_invoice_batch_dt": [
+            "company",
+            "ref",
+            "folio"
+        ],
+        "ht_rent_invoice_batch_hd": [
+            "company",
+            "ref"
+        ],
+        "ht_rent_invoices": [
+            "hi_company",
+            "hi_invtype",
+            "hi_invno"
+        ],
+        "ht_rent_payments": [
+            "hp_company",
+            "hp_trtype",
+            "hp_ref"
+        ],
+        "ht_rent_payments_fcy": [
+            "hp_company",
+            "hp_trtype",
+            "hp_ref",
+            "folio"
+        ],
+        "ht_rent_rsrrvations": [
+            "hc_company",
+            "hc_rsrvation_no"
+        ],
+        "ht_rooms": [
+            "ro_code"
+        ],
+        "ht_roomtypes": [
+            "code"
+        ],
+        "ht_rsrvcancelreasons": [
+            "code"
+        ],
+        "ht_rsrvsources": [
+            "code"
+        ],
+        "ht_rsrvtypes": [
+            "code"
+        ],
+        "ht_services": [
+            "code"
+        ],
+        "ht_srvs_inv_dt": [
+            "company",
+            "invtype",
+            "ref",
+            "folio"
+        ],
+        "ht_srvs_inv_hd": [
+            "company",
+            "invtype",
+            "ref"
+        ],
+        "ht_workers": [
+            "wk_company",
+            "wk_code"
+        ],
+        "inssrvccode": [
+            "iscode",
+            "srvcecode"
+        ],
+        "installment_cmp": [
+            "inscompany",
+            "inscode"
+        ],
+        "insurance": [
+            "company",
+            "iscode"
+        ],
+        "inventory": [
+            "id"
+        ],
+        "ips": [
+            "ip"
+        ],
+        "jccstord_dtl": [
+            "company",
+            "ref",
+            "folio"
+        ],
+        "jccstord_hdr": [
+            "company",
+            "ref"
+        ],
+        "jcstitems": [
+            "cmbkey"
+        ],
+        "lengths_txtile": [
+            "ln_code"
+        ],
+        "markattachedfile": [
+            "guid"
+        ],
+        "notifyme": [
+            "branch",
+            "trtype",
+            "ref",
+            "folio"
+        ],
+        "nqatibankapi": [
+            "bk_bank_id",
+            "bk_company"
+        ],
+        "orcountry": [
+            "country_id"
+        ],
+        "ord_hdr": [
+            "company",
+            "ref"
+        ],
+        "orderpurchasedetails": [
+            "orderpurchasedetailid"
+        ],
+        "orderpurchases": [
+            "orderpurchaseid"
+        ],
+        "orpacking": [
+            "pack_id"
+        ],
+        "orpacktp": [
+            "pack_id"
+        ],
+        "poclnt_taxcode": [
+            "company",
+            "contr",
+            "ref"
+        ],
+        "poinvrmtbl": [
+            "company",
+            "contr",
+            "ref"
+        ],
+        "poitem_btn": [
+            "company",
+            "grp_id",
+            "button_no"
+        ],
+        "poitem_grp": [
+            "company",
+            "grp_id"
+        ],
+        "ponqatibkinv": [
+            "company",
+            "contr",
+            "ref"
+        ],
+        "pos_chhd": [
+            "company",
+            "ref"
+        ],
+        "pos_chrt": [
+            "company",
+            "chrcode"
+        ],
+        "pos_ctr": [
+            "ctrcompany",
+            "ctrcode",
+            "slcenter"
+        ],
+        "pos_dsc": [
+            "dsccompany",
+            "dsccard"
+        ],
+        "pos_dt": [
+            "company",
+            "contr",
+            "ref",
+            "srlno"
+        ],
+        "pos_dtti": [
+            "company",
+            "contr",
+            "ref",
+            "srlno"
+        ],
+        "pos_ei": [
+            "company",
+            "contr",
+            "ref"
+        ],
+        "pos_hd": [
+            "company",
+            "contr",
+            "ref"
+        ],
+        "pos_hdti": [
+            "company",
+            "contr",
+            "ref"
+        ],
+        "pos_mny": [
+            "company",
+            "contr",
+            "mnydate",
+            "slpcode"
+        ],
+        "pos_nqmbr": [
+            "nq_mobile"
+        ],
+        "pos_slp": [
+            "slpcompany",
+            "slpcode"
+        ],
+        "poscccard": [
+            "company",
+            "contr",
+            "ref",
+            "cccardno",
+            "ccsrlno"
+        ],
+        "poschrtinv": [
+            "company",
+            "contr",
+            "ref"
+        ],
+        "posdlvry": [
+            "company",
+            "contr",
+            "ref"
+        ],
+        "posdlvry_ti": [
+            "company",
+            "contr",
+            "ref"
+        ],
+        "posfcamt": [
+            "company",
+            "contr",
+            "ref",
+            "srlno"
+        ],
+        "posinstlmnt_trx": [
+            "company",
+            "contr",
+            "ref"
+        ],
+        "posinvoffer": [
+            "company",
+            "contr",
+            "ref",
+            "srlno"
+        ],
+        "posmnfthcard": [
+            "company",
+            "contr",
+            "ref",
+            "clncard",
+            "itemcode"
+        ],
+        "posppcard": [
+            "company",
+            "contr",
+            "ref",
+            "disccard",
+            "paycard"
+        ],
+        "posrooms": [
+            "company",
+            "slcenter",
+            "room_no"
+        ],
+        "posroomtbl": [
+            "company",
+            "slcenter",
+            "tblroom_no"
+        ],
+        "posrtninv": [
+            "company",
+            "rcontr",
+            "rref"
+        ],
+        "possanedchrty": [
+            "company",
+            "contr",
+            "ref"
+        ],
+        "postables": [
+            "company",
+            "slcenter",
+            "room_no",
+            "table_no"
+        ],
+        "pp_abs_permissions": [
+            "company",
+            "empcode",
+            "work_date"
+        ],
+        "pp_att_all": [
+            "id"
+        ],
+        "pp_emp_device": [
+            "empno"
+        ],
+        "pp_emp_late_permissions": [
+            "company",
+            "empcode",
+            "work_date"
+        ],
+        "pp_indemnity_settlments": [
+            "company",
+            "empno",
+            "stlmnt_date"
+        ],
+        "pp_indemnity_setup": [
+            "t_code"
+        ],
+        "pp_leave_settlments": [
+            "company",
+            "empno",
+            "stlmnt_date"
+        ],
+        "pp_spcl_leaves": [
+            "sp_id"
+        ],
+        "pp_termination_reasons": [
+            "t_code"
+        ],
+        "pp_violations_penalties": [
+            "vcode"
+        ],
+        "pparea": [
+            "cmbkey"
+        ],
+        "ppcrgt": [
+            "company",
+            "code"
+        ],
+        "ppdept": [
+            "dp_comp",
+            "dp_brno",
+            "dp_dept"
+        ],
+        "pphdr": [
+            "phcomp",
+            "phtype",
+            "phref"
+        ],
+        "ppidtypes": [
+            "code"
+        ],
+        "ppmonitor": [
+            "id"
+        ],
+        "ppwarnings": [
+            "wid"
+        ],
+        "pricehst": [
+            "prcode"
+        ],
+        "pudept": [
+            "dp_brno",
+            "dp_dept"
+        ],
+        "pudtl": [
+            "company",
+            "invtype",
+            "ref",
+            "folio"
+        ],
+        "puhdr": [
+            "company",
+            "invtype",
+            "ref"
+        ],
+        "puprsnitems": [
+            "itemno"
+        ],
+        "re_contracts_trans_dt": [
+            "company",
+            "ref",
+            "folio"
+        ],
+        "re_contracts_trans_hd": [
+            "company",
+            "ref"
+        ],
+        "re_elec_inv_dt": [
+            "company",
+            "itype",
+            "ref",
+            "folio"
+        ],
+        "re_elec_inv_hd": [
+            "company",
+            "itype",
+            "ref"
+        ],
+        "re_elec_meters": [
+            "meter_no"
+        ],
+        "re_entitle_batch_dt": [
+            "company",
+            "ref",
+            "folio"
+        ],
+        "re_entitle_batch_hd": [
+            "company",
+            "ref"
+        ],
+        "re_fixes_maintenance": [
+            "company",
+            "trtype",
+            "ref"
+        ],
+        "re_prices_types": [
+            "price_code"
+        ],
+        "re_spcl_dsc_dt": [
+            "company",
+            "trtype",
+            "ref",
+            "folio"
+        ],
+        "re_spcl_dsc_hd": [
+            "company",
+            "trtype",
+            "ref"
+        ],
+        "realestates": [
+            "company",
+            "recmbkey",
+            "recode"
+        ],
+        "rebank": [
+            "bank_code"
+        ],
+        "rebrokers": [
+            "company",
+            "code",
+            "fcy"
+        ],
+        "recontracts": [
+            "company",
+            "contract"
+        ],
+        "recontracts_elec_open": [
+            "company",
+            "contract",
+            "meter_no"
+        ],
+        "reidtypes": [
+            "idtype_code"
+        ],
+        "renatnlty": [
+            "natnlty_code"
+        ],
+        "reowners": [
+            "company",
+            "code",
+            "fcy"
+        ],
+        "repayments": [
+            "company",
+            "contract",
+            "payment_no"
+        ],
+        "reproperty": [
+            "company",
+            "re_code"
+        ],
+        "repropertytypes": [
+            "resttype_code"
+        ],
+        "requestsuplierdetails": [
+            "requestsuplierdetailid"
+        ],
+        "requestsupliers": [
+            "requestsuplierid"
+        ],
+        "requesttransferdetails": [
+            "requesttransferdetailid"
+        ],
+        "requesttransfers": [
+            "requesttransferid"
+        ],
+        "resetup": [
+            "company",
+            "brnno"
+        ],
+        "retenants": [
+            "company",
+            "code",
+            "fcy"
+        ],
+        "retenants_ei": [
+            "company",
+            "code",
+            "fcy"
+        ],
+        "retrans_dt": [
+            "company",
+            "trtype",
+            "ref",
+            "folio"
+        ],
+        "retrans_hd": [
+            "company",
+            "trtype",
+            "ref"
+        ],
+        "retype": [
+            "re_typecode"
+        ],
+        "reunits": [
+            "company",
+            "un_code"
+        ],
+        "reunits_extra": [
+            "company",
+            "un_code"
+        ],
+        "reunittype": [
+            "unittype_code"
+        ],
+        "reunituse": [
+            "unuse_code"
+        ],
+        "rsresturant": [
+            "company",
+            "rs_code"
+        ],
+        "rstcancel_reason": [
+            "cr_id"
+        ],
+        "rstcashier": [
+            "company",
+            "rt_code",
+            "cashier_id"
+        ],
+        "rstcashier_payment_method": [
+            "company",
+            "rt_code",
+            "cashier_id",
+            "payment_id"
+        ],
+        "rstcheftrx_dt": [
+            "branch",
+            "rs_code",
+            "ref",
+            "folio"
+        ],
+        "rstcheftrx_hd": [
+            "branch",
+            "rs_code",
+            "ref"
+        ],
+        "rstclassmenu": [
+            "class_id"
+        ],
+        "rstclients": [
+            "client_mobile"
+        ],
+        "rstcomp_transport_dt": [
+            "company",
+            "tc_rs_code",
+            "tc_code"
+        ],
+        "rstcomp_transport_hd": [
+            "tc_code"
+        ],
+        "rstdistrict_dtl": [
+            "company",
+            "city_id",
+            "district_id",
+            "rt_code"
+        ],
+        "rstdistrict_main": [
+            "city_id",
+            "district_id"
+        ],
+        "rstitem_chefqtys": [
+            "branch",
+            "rt_code",
+            "cmbkey"
+        ],
+        "rstitemimage": [
+            "cmbkey"
+        ],
+        "rstitemoptions": [
+            "cmbkey",
+            "option_id",
+            "opt_dtl_id"
+        ],
+        "rstitmoptqty": [
+            "main_cmbkey",
+            "option_id",
+            "opt_dtl_id",
+            "cmbkey"
+        ],
+        "rstoption_dt": [
+            "opt_dtl_id"
+        ],
+        "rstoption_hd": [
+            "option_id"
+        ],
+        "rstorder_dtl": [
+            "company",
+            "cashier_id",
+            "invno",
+            "srlno"
+        ],
+        "rstorder_hdr": [
+            "company",
+            "cashier_id",
+            "invno"
+        ],
+        "rstorder_payment": [
+            "company",
+            "cashier_id",
+            "invno",
+            "payment_method_id"
+        ],
+        "rstorder_product_option": [
+            "company",
+            "cashier_id",
+            "invno",
+            "option_dtl_id",
+            "srlno"
+        ],
+        "rstpayment_method": [
+            "payment_id"
+        ],
+        "rstposcccard": [
+            "company",
+            "cashier_id",
+            "invno",
+            "cccardno",
+            "ccsrlno"
+        ],
+        "rstposfcamt": [
+            "company",
+            "cashier_id",
+            "invno",
+            "srlno"
+        ],
+        "rstposinvoffer": [
+            "company",
+            "cashier_id",
+            "invno",
+            "srlno"
+        ],
+        "rstposppcard": [
+            "company",
+            "cashier_id",
+            "invno",
+            "disccard",
+            "paycard"
+        ],
+        "rstprinterclass": [
+            "company",
+            "rt_code",
+            "class_id"
+        ],
+        "rstprinters": [
+            "printer_id"
+        ],
+        "rstprivileges": [
+            "privilege_id"
+        ],
+        "rstproductimages": [
+            "cmbkey"
+        ],
+        "rstroomkind": [
+            "rm_kind_id"
+        ],
+        "rstrooms": [
+            "company",
+            "rt_code",
+            "room_no"
+        ],
+        "rstseller": [
+            "company",
+            "username"
+        ],
+        "rsttables": [
+            "company",
+            "rt_code",
+            "room_no",
+            "table_no"
+        ],
+        "rsttabletype": [
+            "tbl_type_id"
+        ],
+        "rstworkperiods": [
+            "company",
+            "rs_code",
+            "period_id"
+        ],
+        "salecntr": [
+            "dp_brno",
+            "dp_dept"
+        ],
+        "sales_dd": [
+            "company",
+            "invtype",
+            "ref",
+            "folio"
+        ],
+        "sales_dh": [
+            "company",
+            "invtype",
+            "ref"
+        ],
+        "sales_dt": [
+            "company",
+            "invtype",
+            "ref",
+            "folio"
+        ],
+        "sales_dtx": [
+            "company",
+            "invtype",
+            "ref",
+            "folio"
+        ],
+        "sales_ei": [
+            "company",
+            "invtype",
+            "ref"
+        ],
+        "sales_es": [
+            "company",
+            "invtype",
+            "ref"
+        ],
+        "sales_gh": [
+            "company",
+            "ref"
+        ],
+        "sales_hd": [
+            "company",
+            "invtype",
+            "ref"
+        ],
+        "sales_oh": [
+            "company",
+            "ref"
+        ],
+        "sales_qh": [
+            "company",
+            "ref"
+        ],
+        "salesmen": [
+            "slcompany",
+            "slcode"
+        ],
+        "sdaad_hd": [
+            "company",
+            "sdtype",
+            "ref"
+        ],
+        "sddtl": [
+            "dt_company",
+            "dt_type",
+            "dt_ref",
+            "dt_folio"
+        ],
+        "sdhdr": [
+            "hd_company",
+            "hd_type",
+            "hd_ref"
+        ],
+        "sdsubscriber_dt": [
+            "sdcompany",
+            "sdsubscrbno",
+            "sdtcode"
+        ],
+        "sdsubscribers": [
+            "sdcompany",
+            "sdsubscrbno"
+        ],
+        "sdtype": [
+            "sdtcode"
+        ],
+        "shbjard_hd": [
+            "branch",
+            "usrid"
+        ],
+        "slalmnmglassdtls": [
+            "company",
+            "invtype",
+            "ref"
+        ],
+        "slclass": [
+            "company",
+            "cmbkey"
+        ],
+        "slfcypay": [
+            "company",
+            "invtype",
+            "ref",
+            "srlno"
+        ],
+        "slglsscc": [
+            "cccode"
+        ],
+        "slglssgrade": [
+            "company",
+            "invtype",
+            "ref"
+        ],
+        "slinvexp": [
+            "company",
+            "invtype",
+            "ref"
+        ],
+        "slktchndtls": [
+            "company",
+            "invtype",
+            "ref"
+        ],
+        "sllinedtls": [
+            "company",
+            "invtype",
+            "ref",
+            "folio"
+        ],
+        "slpaytype": [
+            "company",
+            "invtype",
+            "ref"
+        ],
+        "slpu_unused_inv": [
+            "company",
+            "invtype",
+            "ref"
+        ],
+        "slpuorder_od": [
+            "company",
+            "ref",
+            "itemno",
+            "unicode",
+            "porder"
+        ],
+        "slqktchndtls": [
+            "company",
+            "ref"
+        ],
+        "slqlinedtls": [
+            "company",
+            "ref",
+            "folio"
+        ],
+        "sltrans": [
+            "code"
+        ],
+        "slvchrimage": [
+            "company",
+            "invtype",
+            "ref"
+        ],
+        "slverifyinv": [
+            "company",
+            "invtype",
+            "ref"
+        ],
+        "sms": [
+            "smssubject"
+        ],
+        "starea": [
+            "cmbkey"
+        ],
+        "stasmbld": [
+            "itemno",
+            "unicode",
+            "asmitemno",
+            "asmunicode"
+        ],
+        "stattrbname": [
+            "atn_id"
+        ],
+        "stbins": [
+            "branch",
+            "itemno",
+            "unicode",
+            "whno",
+            "binno"
+        ],
+        "stbrand": [
+            "brand_id"
+        ],
+        "stbrprice": [
+            "company",
+            "slcenter",
+            "itemno",
+            "unicode"
+        ],
+        "stclass": [
+            "cmbkey"
+        ],
+        "stcmpdtl": [
+            "branch",
+            "trtype",
+            "ref",
+            "folio"
+        ],
+        "stcommission": [
+            "itemno",
+            "unicode"
+        ],
+        "stcosttype": [
+            "branch",
+            "itemno",
+            "unicode"
+        ],
+        "stcrtpuinv": [
+            "branch",
+            "splycode",
+            "fcy",
+            "splyinv",
+            "itemno",
+            "unicode"
+        ],
+        "stdbtoffr_dt": [
+            "branch",
+            "ref",
+            "folio"
+        ],
+        "stdtl": [
+            "branch",
+            "trtype",
+            "ref",
+            "folio"
+        ],
+        "stfcwhrate": [
+            "fc_wh_srlno"
+        ],
+        "stfcyprice": [
+            "itemno",
+            "unicode"
+        ],
+        "stfcyprice_bc": [
+            "pbarcode"
+        ],
+        "sthdr": [
+            "branch",
+            "trtype",
+            "ref"
+        ],
+        "stinout_log": [
+            "ref"
+        ],
+        "stitem_mae": [
+            "itemno",
+            "unicode"
+        ],
+        "stitembc": [
+            "pbarcode"
+        ],
+        "stitemnqati": [
+            "cmbkey"
+        ],
+        "stitems": [
+            "itemno"
+        ],
+        "stitemsrlno": [
+            "itemno",
+            "unicode",
+            "serial_no"
+        ],
+        "stitmphoto": [
+            "itemno",
+            "unicode"
+        ],
+        "stitmsply": [
+            "branch",
+            "itemno",
+            "unicode",
+            "splycode",
+            "fcy"
+        ],
+        "stoffer_grp_dt": [
+            "grp_no",
+            "barcode"
+        ],
+        "stoffer_grp_hd": [
+            "grp_no"
+        ],
+        "stoffers": [
+            "company",
+            "slcenter",
+            "offer_no",
+            "barcode"
+        ],
+        "stoffers_dt": [
+            "company",
+            "slcenter",
+            "offer_no",
+            "ms_barcode",
+            "barcode"
+        ],
+        "stoffers_main": [
+            "company",
+            "slcenter",
+            "offer_no"
+        ],
+        "stprcchgfcy": [
+            "fccp_code"
+        ],
+        "stprmattrb": [
+            "pat_id"
+        ],
+        "stqtybc": [
+            "barcode"
+        ],
+        "streorderqp": [
+            "itemno",
+            "unicode"
+        ],
+        "stscnattrb": [
+            "sat_id"
+        ],
+        "stsrlno_dt": [
+            "branch",
+            "trtype",
+            "ref",
+            "folio",
+            "whno",
+            "serial_no"
+        ],
+        "stunits": [
+            "itemno",
+            "unicode"
+        ],
+        "stwhous": [
+            "whno"
+        ],
+        "stwhracks": [
+            "branch",
+            "whno",
+            "rk_zoneid",
+            "rk_id"
+        ],
+        "stwhrkbins": [
+            "branch",
+            "whno",
+            "bn_zoneid",
+            "bn_rackid",
+            "bn_binno",
+            "bn_direction"
+        ],
+        "stwhzones": [
+            "branch",
+            "whno",
+            "zn_id"
+        ],
+        "stwmaloc_dt": [
+            "branch",
+            "alctype",
+            "alcref",
+            "cn_id"
+        ],
+        "stwmaloc_hd": [
+            "branch",
+            "alctype",
+            "alcref"
+        ],
+        "stwmcntnr_dt": [
+            "cn_id",
+            "barcode"
+        ],
+        "stwmcntnr_hd": [
+            "cn_id"
+        ],
+        "stwmcntnrtrx_dt": [
+            "branch",
+            "ref",
+            "barcode",
+            "cn_id",
+            "to_cn_id"
+        ],
+        "stwmcntnrtrx_hd": [
+            "branch",
+            "ref"
+        ],
+        "stwmtrx_dt": [
+            "branch",
+            "trtype",
+            "ref",
+            "folio"
+        ],
+        "stwmtrx_hd": [
+            "branch",
+            "trtype",
+            "ref"
+        ],
+        "supplier": [
+            "cu_company",
+            "cu_code",
+            "cf_fcy"
+        ],
+        "sysgp": [
+            "grpid"
+        ],
+        "sysuse": [
+            "username"
+        ],
+        "tailor_button_types": [
+            "code"
+        ],
+        "tailor_category": [
+            "code"
+        ],
+        "tailor_closure_types": [
+            "code"
+        ],
+        "tailor_collar_types": [
+            "code"
+        ],
+        "tailor_dlvry": [
+            "company",
+            "dlvr_ref"
+        ],
+        "tailor_fill_types": [
+            "code"
+        ],
+        "tailor_fix_dt": [
+            "company",
+            "ref",
+            "folio"
+        ],
+        "tailor_fix_hd": [
+            "company",
+            "ref"
+        ],
+        "tailor_kabak_types": [
+            "code"
+        ],
+        "tailor_ord_dt": [
+            "company",
+            "ref",
+            "folio"
+        ],
+        "tailor_ord_hd": [
+            "company",
+            "ref"
+        ],
+        "tailor_ord_size": [
+            "company",
+            "ref"
+        ],
+        "tailor_pocket_types": [
+            "code"
+        ],
+        "tailor_ready_made_sales": [
+            "company",
+            "invtype",
+            "ref"
+        ],
+        "tailor_rtrn_dt": [
+            "company",
+            "ref",
+            "folio"
+        ],
+        "tailor_rtrn_hd": [
+            "company",
+            "ref"
+        ],
+        "tailor_stickers_types": [
+            "code"
+        ],
+        "tailor_tailoring_types": [
+            "code"
+        ],
+        "tailor_trans_dt": [
+            "company",
+            "transtype",
+            "ref",
+            "folio"
+        ],
+        "tailor_trans_hd": [
+            "company",
+            "transtype",
+            "ref"
+        ],
+        "tailors": [
+            "trcode"
+        ],
+        "taxcategory": [
+            "taxcatid"
+        ],
+        "taxperiod": [
+            "taxprdcalcomp",
+            "taxprdyrcode",
+            "taxprdcode"
+        ],
+        "tkdrivers": [
+            "company",
+            "driver_no"
+        ],
+        "tkdrvrexpnse_dt": [
+            "company",
+            "cnt_ref",
+            "cnt_whno"
+        ],
+        "tkdrvrexpnse_hd": [
+            "company",
+            "cnt_ref"
+        ],
+        "tktranscost_dt": [
+            "company",
+            "cnt_ref",
+            "cnt_whno",
+            "packx"
+        ],
+        "tktranscost_hd": [
+            "company",
+            "cnt_ref"
+        ],
+        "tktrucks": [
+            "company",
+            "truck_id"
+        ],
+        "trxaddtime": [
+            "xxbranch",
+            "xxtype",
+            "xxref",
+            "ac_st"
+        ],
+        "ttkfile": [
+            "whno",
+            "binno",
+            "itemno",
+            "unicode"
+        ],
+        "ttknfile": [
+            "whno",
+            "binno",
+            "itemno",
+            "unicode"
+        ],
+        "vender_dtl": [
+            "vn_company",
+            "vn_code",
+            "vn_fcy"
+        ],
+        "websites": [
+            "wcompany",
+            "wcode"
+        ],
+        "whatsapp_log": [
+            "wts_id"
+        ]
+    },
+    "foreign_keys": {
+        "apdtl": [
+            {
+                "name": "fk_apdtl_aphdr1",
+                "ref_table": "aphdr",
+                "cols": [
+                    "dt_company",
+                    "dt_type",
+                    "dt_ref"
+                ],
+                "ref_cols": [
+                    "hd_company",
+                    "hd_type",
+                    "hd_ref"
+                ]
+            }
+        ],
+        "apitemprice_dt": [
+            {
+                "name": "fk_apitemprice_dt_apitemprice_hd",
+                "ref_table": "apitemprice_hd",
+                "cols": [
+                    "company",
+                    "cnt_ref"
+                ],
+                "ref_cols": [
+                    "company",
+                    "cnt_ref"
+                ]
+            }
+        ],
+        "arch_offers_dt": [
+            {
+                "name": "fk_arch_offers_dt_arch_offers_hd",
+                "ref_table": "arch_offers_hd",
+                "cols": [
+                    "company",
+                    "slcenter",
+                    "ref"
+                ],
+                "ref_cols": [
+                    "company",
+                    "slcenter",
+                    "ref"
+                ]
+            }
+        ],
+        "arch_offers_dt_sub": [
+            {
+                "name": "fk_arch_offers_dt_sub_arch_offers_dt",
+                "ref_table": "arch_offers_dt",
+                "cols": [
+                    "company",
+                    "slcenter",
+                    "ref",
+                    "ms_barcode"
+                ],
+                "ref_cols": [
+                    "company",
+                    "slcenter",
+                    "ref",
+                    "barcode"
+                ]
+            }
+        ],
+        "ardtl": [
+            {
+                "name": "fk_ardtl_arhdr1",
+                "ref_table": "arhdr",
+                "cols": [
+                    "dt_company",
+                    "dt_type",
+                    "dt_ref"
+                ],
+                "ref_cols": [
+                    "hd_company",
+                    "hd_type",
+                    "hd_ref"
+                ]
+            }
+        ],
+        "aritemprice_dt": [
+            {
+                "name": "fk_aritemprice_dt_aritemprice_hd",
+                "ref_table": "aritemprice_hd",
+                "cols": [
+                    "company",
+                    "cnt_ref"
+                ],
+                "ref_cols": [
+                    "company",
+                    "cnt_ref"
+                ]
+            }
+        ],
+        "customer_dtls": [
+            {
+                "name": "fk_customer_dtls_customer_dtls",
+                "ref_table": "customer",
+                "cols": [
+                    "bu_company",
+                    "bu_code",
+                    "bu_fcy"
+                ],
+                "ref_cols": [
+                    "cu_company",
+                    "cu_code",
+                    "cf_fcy"
+                ]
+            }
+        ],
+        "delchgdtl": [
+            {
+                "name": "fk_delchgdtl_delchghdr",
+                "ref_table": "delchghdr",
+                "cols": [
+                    "trx_id"
+                ],
+                "ref_cols": [
+                    "trx_id"
+                ]
+            }
+        ],
+        "exporders_dt": [
+            {
+                "name": "fk_exporders_dt_exporders_hd",
+                "ref_table": "exporders_hd",
+                "cols": [
+                    "company",
+                    "orderid"
+                ],
+                "ref_cols": [
+                    "company",
+                    "orderid"
+                ]
+            }
+        ],
+        "expreplaced_dt": [
+            {
+                "name": "fk_expreplaced_dt_expreplaced_hd",
+                "ref_table": "expreplaced_hd",
+                "cols": [
+                    "company",
+                    "glref"
+                ],
+                "ref_cols": [
+                    "company",
+                    "glref"
+                ]
+            }
+        ],
+        "fadtl": [
+            {
+                "name": "fk_fadtl_fahdr",
+                "ref_table": "fahdr",
+                "cols": [
+                    "fd_company",
+                    "fd_type",
+                    "fd_ref"
+                ],
+                "ref_cols": [
+                    "fh_company",
+                    "fh_type",
+                    "fh_ref"
+                ]
+            }
+        ],
+        "fsiss_dt": [
+            {
+                "name": "fk_fsiss_dt_fsiss_hd1",
+                "ref_table": "fsiss_hd",
+                "cols": [
+                    "ref"
+                ],
+                "ref_cols": [
+                    "ref"
+                ]
+            }
+        ],
+        "fsrcv_dt": [
+            {
+                "name": "fk_fsrcv_dt_fsrcv_hd",
+                "ref_table": "fsrcv_hd",
+                "cols": [
+                    "branch",
+                    "trtype",
+                    "ref"
+                ],
+                "ref_cols": [
+                    "branch",
+                    "trtype",
+                    "ref"
+                ]
+            }
+        ],
+        "gljrcost": [
+            {
+                "name": "fk_gljrcost_gljrdtl",
+                "ref_table": "gljrdtl",
+                "cols": [
+                    "company",
+                    "jdtype",
+                    "jdref",
+                    "jdfolno"
+                ],
+                "ref_cols": [
+                    "jdcomp",
+                    "jdtype",
+                    "jdref",
+                    "jdfolno"
+                ]
+            }
+        ],
+        "gljrdtl": [
+            {
+                "name": "fk_gljrdtl_gljrhdr",
+                "ref_table": "gljrhdr",
+                "cols": [
+                    "jdcomp",
+                    "jdtype",
+                    "jdref"
+                ],
+                "ref_cols": [
+                    "jhcomp",
+                    "jhtype",
+                    "jhref"
+                ]
+            }
+        ],
+        "ht_rent_companions": [
+            {
+                "name": "fk_ht_rent_companions_ht_rent_contracts",
+                "ref_table": "ht_rent_contracts",
+                "cols": [
+                    "cn_company",
+                    "cn_contract_no"
+                ],
+                "ref_cols": [
+                    "hc_company",
+                    "hc_contract_no"
+                ]
+            }
+        ],
+        "ht_rent_contracts_jv_dt": [
+            {
+                "name": "fk_ht_rent_contracts_jv_dt_ht_rent_contracts_jv_hd",
+                "ref_table": "ht_rent_contracts_jv_hd",
+                "cols": [
+                    "ha_company",
+                    "ha_trtype",
+                    "ha_ref"
+                ],
+                "ref_cols": [
+                    "company",
+                    "trtype",
+                    "ref"
+                ]
+            }
+        ],
+        "ht_rent_invoice_batch_dt": [
+            {
+                "name": "pk_ht_rent_invoice_batch_dt_ht_rent_invoice_batch_hd",
+                "ref_table": "ht_rent_invoice_batch_hd",
+                "cols": [
+                    "company",
+                    "ref"
+                ],
+                "ref_cols": [
+                    "company",
+                    "ref"
+                ]
+            }
+        ],
+        "ht_rent_payments_cc": [
+            {
+                "name": "fk_ht_rent_payments_cc_ht_rent_payments",
+                "ref_table": "ht_rent_payments",
+                "cols": [
+                    "hp_company",
+                    "hp_trtype",
+                    "hp_ref"
+                ],
+                "ref_cols": [
+                    "hp_company",
+                    "hp_trtype",
+                    "hp_ref"
+                ]
+            }
+        ],
+        "ht_rent_payments_fcy": [
+            {
+                "name": "fk_ht_rent_payments_fcy_ht_rent_payments",
+                "ref_table": "ht_rent_payments",
+                "cols": [
+                    "hp_company",
+                    "hp_trtype",
+                    "hp_ref"
+                ],
+                "ref_cols": [
+                    "hp_company",
+                    "hp_trtype",
+                    "hp_ref"
+                ]
+            }
+        ],
+        "ht_srvs_inv_dt": [
+            {
+                "name": "fk_ht_srvs_inv_dt_ht_srvs_inv_hd",
+                "ref_table": "ht_srvs_inv_hd",
+                "cols": [
+                    "company",
+                    "invtype",
+                    "ref"
+                ],
+                "ref_cols": [
+                    "company",
+                    "invtype",
+                    "ref"
+                ]
+            }
+        ],
+        "jccstord_dtl": [
+            {
+                "name": "fk_jccstord_dtl_jccstord_hdr",
+                "ref_table": "jccstord_hdr",
+                "cols": [
+                    "company",
+                    "ref"
+                ],
+                "ref_cols": [
+                    "company",
+                    "ref"
+                ]
+            }
+        ],
+        "jcstitems": [
+            {
+                "name": "fk_jcstitems_stunits",
+                "ref_table": "stunits",
+                "cols": [
+                    "cmbkey"
+                ],
+                "ref_cols": [
+                    "cmbkey"
+                ]
+            }
+        ],
+        "ord_dtl": [
+            {
+                "name": "fk_ord_dtl_ord_hdr",
+                "ref_table": "ord_hdr",
+                "cols": [
+                    "company",
+                    "ref"
+                ],
+                "ref_cols": [
+                    "company",
+                    "ref"
+                ]
+            }
+        ],
+        "orderpurchasedetails": [
+            {
+                "name": "fk_dbo.orderpurchasedetails_dbo.orderpurchases_orderpurchaseid",
+                "ref_table": "orderpurchases",
+                "cols": [
+                    "orderpurchaseid"
+                ],
+                "ref_cols": [
+                    "orderpurchaseid"
+                ]
+            }
+        ],
+        "poclnt_taxcode": [
+            {
+                "name": "fk_poclnt_taxcode_pos_hd",
+                "ref_table": "pos_hd",
+                "cols": [
+                    "company",
+                    "contr",
+                    "ref"
+                ],
+                "ref_cols": [
+                    "company",
+                    "contr",
+                    "ref"
+                ]
+            }
+        ],
+        "poinvrmtbl": [
+            {
+                "name": "fk_poinvrmtbl_pos_hd",
+                "ref_table": "pos_hd",
+                "cols": [
+                    "company",
+                    "contr",
+                    "ref"
+                ],
+                "ref_cols": [
+                    "company",
+                    "contr",
+                    "ref"
+                ]
+            }
+        ],
+        "ponqatibkinv": [
+            {
+                "name": "fk_ponqatibkinv_pos_hd",
+                "ref_table": "pos_hd",
+                "cols": [
+                    "company",
+                    "contr",
+                    "ref"
+                ],
+                "ref_cols": [
+                    "company",
+                    "contr",
+                    "ref"
+                ]
+            }
+        ],
+        "pos_chdt": [
+            {
+                "name": "fk_pos_chdt_pos_chhd",
+                "ref_table": "pos_chhd",
+                "cols": [
+                    "company",
+                    "ref"
+                ],
+                "ref_cols": [
+                    "company",
+                    "ref"
+                ]
+            }
+        ],
+        "pos_dt": [
+            {
+                "name": "fk_pos_dt_pos_hd",
+                "ref_table": "pos_hd",
+                "cols": [
+                    "company",
+                    "contr",
+                    "ref"
+                ],
+                "ref_cols": [
+                    "company",
+                    "contr",
+                    "ref"
+                ]
+            }
+        ],
+        "pos_dtti": [
+            {
+                "name": "fk_pos_dtti_pos_hdti",
+                "ref_table": "pos_hdti",
+                "cols": [
+                    "company",
+                    "contr",
+                    "ref"
+                ],
+                "ref_cols": [
+                    "company",
+                    "contr",
+                    "ref"
+                ]
+            }
+        ],
+        "pos_ei": [
+            {
+                "name": "fk_pos_ei_pos_hd",
+                "ref_table": "pos_hd",
+                "cols": [
+                    "company",
+                    "contr",
+                    "ref"
+                ],
+                "ref_cols": [
+                    "company",
+                    "contr",
+                    "ref"
+                ]
+            }
+        ],
+        "poscccard": [
+            {
+                "name": "fk_poscccard_pos_hd",
+                "ref_table": "pos_hd",
+                "cols": [
+                    "company",
+                    "contr",
+                    "ref"
+                ],
+                "ref_cols": [
+                    "company",
+                    "contr",
+                    "ref"
+                ]
+            }
+        ],
+        "poschrtinv": [
+            {
+                "name": "fk_poschrtinv_pos_hd",
+                "ref_table": "pos_hd",
+                "cols": [
+                    "company",
+                    "contr",
+                    "ref"
+                ],
+                "ref_cols": [
+                    "company",
+                    "contr",
+                    "ref"
+                ]
+            }
+        ],
+        "posdlvry": [
+            {
+                "name": "fk_posdlvry_pos_hd",
+                "ref_table": "pos_hd",
+                "cols": [
+                    "company",
+                    "contr",
+                    "ref"
+                ],
+                "ref_cols": [
+                    "company",
+                    "contr",
+                    "ref"
+                ]
+            }
+        ],
+        "posdlvry_ti": [
+            {
+                "name": "fk_posdlvry_ti_pos_hdti",
+                "ref_table": "pos_hdti",
+                "cols": [
+                    "company",
+                    "contr",
+                    "ref"
+                ],
+                "ref_cols": [
+                    "company",
+                    "contr",
+                    "ref"
+                ]
+            }
+        ],
+        "posfcamt": [
+            {
+                "name": "fk_posfcamt_pos_hd",
+                "ref_table": "pos_hd",
+                "cols": [
+                    "company",
+                    "contr",
+                    "ref"
+                ],
+                "ref_cols": [
+                    "company",
+                    "contr",
+                    "ref"
+                ]
+            }
+        ],
+        "posinstlmnt_trx": [
+            {
+                "name": "fk_posinstlmnt_trx_pos_hd",
+                "ref_table": "pos_hd",
+                "cols": [
+                    "company",
+                    "contr",
+                    "ref"
+                ],
+                "ref_cols": [
+                    "company",
+                    "contr",
+                    "ref"
+                ]
+            }
+        ],
+        "posinvoffer": [
+            {
+                "name": "fk_posinvoffer_pos_dt",
+                "ref_table": "pos_dt",
+                "cols": [
+                    "company",
+                    "contr",
+                    "ref",
+                    "srlno"
+                ],
+                "ref_cols": [
+                    "company",
+                    "contr",
+                    "ref",
+                    "srlno"
+                ]
+            }
+        ],
+        "posmnfthcard": [
+            {
+                "name": "fk_posmnfthcard_pos_hd",
+                "ref_table": "pos_hd",
+                "cols": [
+                    "company",
+                    "contr",
+                    "ref"
+                ],
+                "ref_cols": [
+                    "company",
+                    "contr",
+                    "ref"
+                ]
+            }
+        ],
+        "posppcard": [
+            {
+                "name": "fk_posppcard_pos_hd",
+                "ref_table": "pos_hd",
+                "cols": [
+                    "company",
+                    "contr",
+                    "ref"
+                ],
+                "ref_cols": [
+                    "company",
+                    "contr",
+                    "ref"
+                ]
+            }
+        ],
+        "posrtninv": [
+            {
+                "name": "fk_posrtninv_pos_hd",
+                "ref_table": "pos_hd",
+                "cols": [
+                    "company",
+                    "contr",
+                    "ref"
+                ],
+                "ref_cols": [
+                    "company",
+                    "contr",
+                    "ref"
+                ]
+            }
+        ],
+        "possanedchrty": [
+            {
+                "name": "fk_possanedchrty_pos_hd",
+                "ref_table": "pos_hd",
+                "cols": [
+                    "company",
+                    "contr",
+                    "ref"
+                ],
+                "ref_cols": [
+                    "company",
+                    "contr",
+                    "ref"
+                ]
+            }
+        ],
+        "postables": [
+            {
+                "name": "fk_posrooms_postables",
+                "ref_table": "posrooms",
+                "cols": [
+                    "company",
+                    "slcenter",
+                    "room_no"
+                ],
+                "ref_cols": [
+                    "company",
+                    "slcenter",
+                    "room_no"
+                ]
+            }
+        ],
+        "ppdtl": [
+            {
+                "name": "fk_ppdtl_pphdr",
+                "ref_table": "pphdr",
+                "cols": [
+                    "pdcomp",
+                    "pdtype",
+                    "pdref"
+                ],
+                "ref_cols": [
+                    "phcomp",
+                    "phtype",
+                    "phref"
+                ]
+            }
+        ],
+        "ppjrdtl": [
+            {
+                "name": "fk_ppjrdtl_pphdr",
+                "ref_table": "pphdr",
+                "cols": [
+                    "jdcomp",
+                    "jdtype",
+                    "jdref"
+                ],
+                "ref_cols": [
+                    "phcomp",
+                    "phtype",
+                    "phref"
+                ]
+            }
+        ],
+        "pudtl": [
+            {
+                "name": "fk_pudtl_puhdr",
+                "ref_table": "puhdr",
+                "cols": [
+                    "company",
+                    "invtype",
+                    "ref"
+                ],
+                "ref_cols": [
+                    "company",
+                    "invtype",
+                    "ref"
+                ]
+            }
+        ],
+        "re_contracts_trans_dt": [
+            {
+                "name": "pk_re_contracts_trans_dt_re_contracts_trans_hd",
+                "ref_table": "re_contracts_trans_hd",
+                "cols": [
+                    "company",
+                    "ref"
+                ],
+                "ref_cols": [
+                    "company",
+                    "ref"
+                ]
+            }
+        ],
+        "re_elec_inv_dt": [
+            {
+                "name": "fk_re_elec_inv_dt_re_elec_inv_hd",
+                "ref_table": "re_elec_inv_hd",
+                "cols": [
+                    "company",
+                    "itype",
+                    "ref"
+                ],
+                "ref_cols": [
+                    "company",
+                    "itype",
+                    "ref"
+                ]
+            }
+        ],
+        "re_entitle_batch_dt": [
+            {
+                "name": "pk_re_entitle_batch_dt_re_entitle_batch_hd",
+                "ref_table": "re_entitle_batch_hd",
+                "cols": [
+                    "company",
+                    "ref"
+                ],
+                "ref_cols": [
+                    "company",
+                    "ref"
+                ]
+            }
+        ],
+        "re_spcl_dsc_dt": [
+            {
+                "name": "fk_re_spcl_dsc_dt_re_spcl_dsc_hd",
+                "ref_table": "re_spcl_dsc_hd",
+                "cols": [
+                    "company",
+                    "trtype",
+                    "ref"
+                ],
+                "ref_cols": [
+                    "company",
+                    "trtype",
+                    "ref"
+                ]
+            }
+        ],
+        "recontracts_elec_open": [
+            {
+                "name": "fk_recontracts_elec_open_recontracts",
+                "ref_table": "recontracts",
+                "cols": [
+                    "company",
+                    "contract"
+                ],
+                "ref_cols": [
+                    "company",
+                    "contract"
+                ]
+            }
+        ],
+        "repayments": [
+            {
+                "name": "fk_repayments_recontracts",
+                "ref_table": "recontracts",
+                "cols": [
+                    "company",
+                    "contract"
+                ],
+                "ref_cols": [
+                    "company",
+                    "contract"
+                ]
+            }
+        ],
+        "requestsuplierdetails": [
+            {
+                "name": "fk_dbo.requestsuplierdetails_dbo.requestsupliers_requestsuplierid",
+                "ref_table": "requestsupliers",
+                "cols": [
+                    "requestsuplierid"
+                ],
+                "ref_cols": [
+                    "requestsuplierid"
+                ]
+            }
+        ],
+        "requesttransferdetails": [
+            {
+                "name": "fk_dbo.requesttransferdetails_dbo.requesttransfers_requesttransferid",
+                "ref_table": "requesttransfers",
+                "cols": [
+                    "requesttransferid"
+                ],
+                "ref_cols": [
+                    "requesttransferid"
+                ]
+            }
+        ],
+        "retenants_ei": [
+            {
+                "name": "fk_retenants_retenants_ei",
+                "ref_table": "retenants",
+                "cols": [
+                    "company",
+                    "code",
+                    "fcy"
+                ],
+                "ref_cols": [
+                    "company",
+                    "code",
+                    "fcy"
+                ]
+            }
+        ],
+        "retrans_dt": [
+            {
+                "name": "fk_retrans_dt_retrans_hd",
+                "ref_table": "retrans_hd",
+                "cols": [
+                    "company",
+                    "trtype",
+                    "ref"
+                ],
+                "ref_cols": [
+                    "company",
+                    "trtype",
+                    "ref"
+                ]
+            }
+        ],
+        "reunits_extra": [
+            {
+                "name": "fk_reunits_extra_reunits",
+                "ref_table": "reunits",
+                "cols": [
+                    "company",
+                    "un_code"
+                ],
+                "ref_cols": [
+                    "company",
+                    "un_code"
+                ]
+            }
+        ],
+        "rstcashier": [
+            {
+                "name": "fk_rstcashier_rstcashier",
+                "ref_table": "rstcashier",
+                "cols": [
+                    "company",
+                    "rt_code",
+                    "cashier_id"
+                ],
+                "ref_cols": [
+                    "company",
+                    "rt_code",
+                    "cashier_id"
+                ]
+            }
+        ],
+        "rstcashier_payment_method": [
+            {
+                "name": "fk_rstcashier_payment_method_rstcashier",
+                "ref_table": "rstcashier",
+                "cols": [
+                    "company",
+                    "rt_code",
+                    "cashier_id"
+                ],
+                "ref_cols": [
+                    "company",
+                    "rt_code",
+                    "cashier_id"
+                ]
+            }
+        ],
+        "rstcheftrx_dt": [
+            {
+                "name": "fk_rstcheftrx_dt_rstcheftrx_hd",
+                "ref_table": "rstcheftrx_hd",
+                "cols": [
+                    "branch",
+                    "rs_code",
+                    "ref"
+                ],
+                "ref_cols": [
+                    "branch",
+                    "rs_code",
+                    "ref"
+                ]
+            }
+        ],
+        "rstdistrict_dtl": [
+            {
+                "name": "fk_rstdistrict_dtl_rstdistrict_main",
+                "ref_table": "rstdistrict_main",
+                "cols": [
+                    "city_id",
+                    "district_id"
+                ],
+                "ref_cols": [
+                    "city_id",
+                    "district_id"
+                ]
+            }
+        ],
+        "rstitemimage": [
+            {
+                "name": "fk_rstitemimage_stunits",
+                "ref_table": "stunits",
+                "cols": [
+                    "cmbkey"
+                ],
+                "ref_cols": [
+                    "cmbkey"
+                ]
+            }
+        ],
+        "rstitemoptions": [
+            {
+                "name": "fk_rstitemoptions_rstoption_dt",
+                "ref_table": "rstoption_dt",
+                "cols": [
+                    "opt_dtl_id"
+                ],
+                "ref_cols": [
+                    "opt_dtl_id"
+                ]
+            },
+            {
+                "name": "fk_rstitemoptions_stunits",
+                "ref_table": "stunits",
+                "cols": [
+                    "cmbkey"
+                ],
+                "ref_cols": [
+                    "cmbkey"
+                ]
+            }
+        ],
+        "rstitmoptqty": [
+            {
+                "name": "fk_rstitmoptqty_rstitemoptions",
+                "ref_table": "rstitemoptions",
+                "cols": [
+                    "main_cmbkey",
+                    "option_id",
+                    "opt_dtl_id"
+                ],
+                "ref_cols": [
+                    "cmbkey",
+                    "option_id",
+                    "opt_dtl_id"
+                ]
+            }
+        ],
+        "rstoption_dt": [
+            {
+                "name": "fk_rstoption_dt_rstoption_hd",
+                "ref_table": "rstoption_hd",
+                "cols": [
+                    "option_id"
+                ],
+                "ref_cols": [
+                    "option_id"
+                ]
+            }
+        ],
+        "rstorder_dtl": [
+            {
+                "name": "fk_rstorder_dtl_order",
+                "ref_table": "rstorder_hdr",
+                "cols": [
+                    "company",
+                    "cashier_id",
+                    "invno"
+                ],
+                "ref_cols": [
+                    "company",
+                    "cashier_id",
+                    "invno"
+                ]
+            }
+        ],
+        "rstorder_payment": [
+            {
+                "name": "fk_rstorder_payment_order",
+                "ref_table": "rstorder_hdr",
+                "cols": [
+                    "company",
+                    "cashier_id",
+                    "invno"
+                ],
+                "ref_cols": [
+                    "company",
+                    "cashier_id",
+                    "invno"
+                ]
+            }
+        ],
+        "rstorder_product_option": [
+            {
+                "name": "fk_rstorder_product_option_rstorder_dtl",
+                "ref_table": "rstorder_dtl",
+                "cols": [
+                    "company",
+                    "cashier_id",
+                    "invno",
+                    "srlno"
+                ],
+                "ref_cols": [
+                    "company",
+                    "cashier_id",
+                    "invno",
+                    "srlno"
+                ]
+            }
+        ],
+        "rstorder_reservation": [
+            {
+                "name": "fk_rstorder_reservation_order",
+                "ref_table": "rstorder_hdr",
+                "cols": [
+                    "company",
+                    "cashier_id",
+                    "invno"
+                ],
+                "ref_cols": [
+                    "company",
+                    "cashier_id",
+                    "invno"
+                ]
+            }
+        ],
+        "rstorder_roomtbl": [
+            {
+                "name": "fk_rstorder_roomtbl_order",
+                "ref_table": "rstorder_hdr",
+                "cols": [
+                    "company",
+                    "cashier_id",
+                    "invno"
+                ],
+                "ref_cols": [
+                    "company",
+                    "cashier_id",
+                    "invno"
+                ]
+            }
+        ],
+        "rstposcccard": [
+            {
+                "name": "fk_rstposcccard_rstorder_hdr",
+                "ref_table": "rstorder_hdr",
+                "cols": [
+                    "company",
+                    "cashier_id",
+                    "invno"
+                ],
+                "ref_cols": [
+                    "company",
+                    "cashier_id",
+                    "invno"
+                ]
+            }
+        ],
+        "rstposfcamt": [
+            {
+                "name": "fk_rstposfcamt_rstorder_hdr",
+                "ref_table": "rstorder_hdr",
+                "cols": [
+                    "company",
+                    "cashier_id",
+                    "invno"
+                ],
+                "ref_cols": [
+                    "company",
+                    "cashier_id",
+                    "invno"
+                ]
+            }
+        ],
+        "rstposinvoffer": [
+            {
+                "name": "fk_rstposinvoffer_rstposinvoffer",
+                "ref_table": "rstorder_dtl",
+                "cols": [
+                    "company",
+                    "cashier_id",
+                    "invno",
+                    "srlno"
+                ],
+                "ref_cols": [
+                    "company",
+                    "cashier_id",
+                    "invno",
+                    "srlno"
+                ]
+            }
+        ],
+        "rstposppcard": [
+            {
+                "name": "fk_rstposppcard_rstorder_hdr",
+                "ref_table": "rstorder_hdr",
+                "cols": [
+                    "company",
+                    "cashier_id",
+                    "invno"
+                ],
+                "ref_cols": [
+                    "company",
+                    "cashier_id",
+                    "invno"
+                ]
+            }
+        ],
+        "rstprinterclass": [
+            {
+                "name": "fk_rstprinterclass_rstclassmenu",
+                "ref_table": "rstclassmenu",
+                "cols": [
+                    "class_id"
+                ],
+                "ref_cols": [
+                    "class_id"
+                ]
+            }
+        ],
+        "rstproductimages": [
+            {
+                "name": "fk_rstproductimages_stunits",
+                "ref_table": "stunits",
+                "cols": [
+                    "cmbkey"
+                ],
+                "ref_cols": [
+                    "cmbkey"
+                ]
+            }
+        ],
+        "rsttables": [
+            {
+                "name": "fk_rsttables_rstrooms",
+                "ref_table": "rstrooms",
+                "cols": [
+                    "company",
+                    "rt_code",
+                    "room_no"
+                ],
+                "ref_cols": [
+                    "company",
+                    "rt_code",
+                    "room_no"
+                ]
+            }
+        ],
+        "rstworkperiods": [
+            {
+                "name": "fk_rstworkperiods_rsresturant",
+                "ref_table": "rsresturant",
+                "cols": [
+                    "company",
+                    "rs_code"
+                ],
+                "ref_cols": [
+                    "company",
+                    "rs_code"
+                ]
+            }
+        ],
+        "sales_dd": [
+            {
+                "name": "fk_sales_dd_sales_dh",
+                "ref_table": "sales_dh",
+                "cols": [
+                    "company",
+                    "invtype",
+                    "ref"
+                ],
+                "ref_cols": [
+                    "company",
+                    "invtype",
+                    "ref"
+                ]
+            }
+        ],
+        "sales_dt": [
+            {
+                "name": "fk_sales_dt_sales_hd",
+                "ref_table": "sales_hd",
+                "cols": [
+                    "company",
+                    "invtype",
+                    "ref"
+                ],
+                "ref_cols": [
+                    "company",
+                    "invtype",
+                    "ref"
+                ]
+            }
+        ],
+        "sales_es": [
+            {
+                "name": "fk_sales_es_sales_hd",
+                "ref_table": "sales_hd",
+                "cols": [
+                    "company",
+                    "invtype",
+                    "ref"
+                ],
+                "ref_cols": [
+                    "company",
+                    "invtype",
+                    "ref"
+                ]
+            }
+        ],
+        "sales_gd": [
+            {
+                "name": "fk_sales_gd_sales_gh",
+                "ref_table": "sales_gh",
+                "cols": [
+                    "company",
+                    "ref"
+                ],
+                "ref_cols": [
+                    "company",
+                    "ref"
+                ]
+            }
+        ],
+        "sales_od": [
+            {
+                "name": "fk_sales_od_sales_oh",
+                "ref_table": "sales_oh",
+                "cols": [
+                    "company",
+                    "ref"
+                ],
+                "ref_cols": [
+                    "company",
+                    "ref"
+                ]
+            }
+        ],
+        "sales_qd": [
+            {
+                "name": "fk_sales_qd_sales_qh",
+                "ref_table": "sales_qh",
+                "cols": [
+                    "company",
+                    "ref"
+                ],
+                "ref_cols": [
+                    "company",
+                    "ref"
+                ]
+            }
+        ],
+        "sdaad_dt": [
+            {
+                "name": "fk_sdaad_dt_sdaad_hd",
+                "ref_table": "sdaad_hd",
+                "cols": [
+                    "company",
+                    "sdtype",
+                    "ref"
+                ],
+                "ref_cols": [
+                    "company",
+                    "sdtype",
+                    "ref"
+                ]
+            }
+        ],
+        "sddtl": [
+            {
+                "name": "fk_sddtl_sdhdr",
+                "ref_table": "sdhdr",
+                "cols": [
+                    "dt_company",
+                    "dt_type",
+                    "dt_ref"
+                ],
+                "ref_cols": [
+                    "hd_company",
+                    "hd_type",
+                    "hd_ref"
+                ]
+            }
+        ],
+        "sdsubscriber_dt": [
+            {
+                "name": "fk_sdsubscriber_dt_sdsubscribers",
+                "ref_table": "sdsubscribers",
+                "cols": [
+                    "sdcompany",
+                    "sdsubscrbno"
+                ],
+                "ref_cols": [
+                    "sdcompany",
+                    "sdsubscrbno"
+                ]
+            }
+        ],
+        "shbjard_dt": [
+            {
+                "name": "fk_shbjard_dt_shbjard_hd",
+                "ref_table": "shbjard_hd",
+                "cols": [
+                    "branch",
+                    "usrid"
+                ],
+                "ref_cols": [
+                    "branch",
+                    "usrid"
+                ]
+            }
+        ],
+        "slalmnmglassdtls": [
+            {
+                "name": "fk_slalmnmglassdtls_sales_hd",
+                "ref_table": "sales_hd",
+                "cols": [
+                    "company",
+                    "invtype",
+                    "ref"
+                ],
+                "ref_cols": [
+                    "company",
+                    "invtype",
+                    "ref"
+                ]
+            }
+        ],
+        "slccpayment": [
+            {
+                "name": "fk_slccpayment_sales_hd",
+                "ref_table": "sales_hd",
+                "cols": [
+                    "company",
+                    "invtype",
+                    "ref"
+                ],
+                "ref_cols": [
+                    "company",
+                    "invtype",
+                    "ref"
+                ]
+            }
+        ],
+        "slfcypay": [
+            {
+                "name": "fk_slfcypay_sales_hd",
+                "ref_table": "sales_hd",
+                "cols": [
+                    "company",
+                    "invtype",
+                    "ref"
+                ],
+                "ref_cols": [
+                    "company",
+                    "invtype",
+                    "ref"
+                ]
+            }
+        ],
+        "slglssgrade": [
+            {
+                "name": "fk_slglssgrade_sales_hd",
+                "ref_table": "sales_hd",
+                "cols": [
+                    "company",
+                    "invtype",
+                    "ref"
+                ],
+                "ref_cols": [
+                    "company",
+                    "invtype",
+                    "ref"
+                ]
+            }
+        ],
+        "slktchndtls": [
+            {
+                "name": "fk_slktchndtls_sales_hd",
+                "ref_table": "sales_hd",
+                "cols": [
+                    "company",
+                    "invtype",
+                    "ref"
+                ],
+                "ref_cols": [
+                    "company",
+                    "invtype",
+                    "ref"
+                ]
+            }
+        ],
+        "sllinedtls": [
+            {
+                "name": "fk_sllinedtls_sales_hd",
+                "ref_table": "sales_hd",
+                "cols": [
+                    "company",
+                    "invtype",
+                    "ref"
+                ],
+                "ref_cols": [
+                    "company",
+                    "invtype",
+                    "ref"
+                ]
+            }
+        ],
+        "slpaytype": [
+            {
+                "name": "fk_bkpaytype_sales_hd",
+                "ref_table": "sales_hd",
+                "cols": [
+                    "company",
+                    "invtype",
+                    "ref"
+                ],
+                "ref_cols": [
+                    "company",
+                    "invtype",
+                    "ref"
+                ]
+            }
+        ],
+        "slpuorder_od": [
+            {
+                "name": "fk_slpuorder_od_sales_oh",
+                "ref_table": "sales_oh",
+                "cols": [
+                    "company",
+                    "ref"
+                ],
+                "ref_cols": [
+                    "company",
+                    "ref"
+                ]
+            }
+        ],
+        "slqktchndtls": [
+            {
+                "name": "fk_slqktchndtls_sales_qh",
+                "ref_table": "sales_qh",
+                "cols": [
+                    "company",
+                    "ref"
+                ],
+                "ref_cols": [
+                    "company",
+                    "ref"
+                ]
+            }
+        ],
+        "slqlinedtls": [
+            {
+                "name": "fk_slqlinedtls_sales_qh",
+                "ref_table": "sales_qh",
+                "cols": [
+                    "company",
+                    "ref"
+                ],
+                "ref_cols": [
+                    "company",
+                    "ref"
+                ]
+            }
+        ],
+        "slservicecodes": [
+            {
+                "name": "fk_slservicecodes_sales_hd",
+                "ref_table": "sales_hd",
+                "cols": [
+                    "company",
+                    "invtype",
+                    "ref"
+                ],
+                "ref_cols": [
+                    "company",
+                    "invtype",
+                    "ref"
+                ]
+            }
+        ],
+        "slverifyinv": [
+            {
+                "name": "fk_slverifyinv_sales_hd",
+                "ref_table": "sales_hd",
+                "cols": [
+                    "company",
+                    "invtype",
+                    "ref"
+                ],
+                "ref_cols": [
+                    "company",
+                    "invtype",
+                    "ref"
+                ]
+            }
+        ],
+        "stasmbld": [
+            {
+                "name": "fk_stasmbld_stunits",
+                "ref_table": "stunits",
+                "cols": [
+                    "itemno",
+                    "unicode"
+                ],
+                "ref_cols": [
+                    "itemno",
+                    "unicode"
+                ]
+            }
+        ],
+        "stbins": [
+            {
+                "name": "fk_stbins_stunits",
+                "ref_table": "stunits",
+                "cols": [
+                    "itemno",
+                    "unicode"
+                ],
+                "ref_cols": [
+                    "itemno",
+                    "unicode"
+                ]
+            }
+        ],
+        "stbrprice": [
+            {
+                "name": "fk_stbrprice_stunits",
+                "ref_table": "stunits",
+                "cols": [
+                    "itemno",
+                    "unicode"
+                ],
+                "ref_cols": [
+                    "itemno",
+                    "unicode"
+                ]
+            }
+        ],
+        "stcmpdtl": [
+            {
+                "name": "fk_stcmpdtl_sthdr",
+                "ref_table": "sthdr",
+                "cols": [
+                    "branch",
+                    "trtype",
+                    "ref"
+                ],
+                "ref_cols": [
+                    "branch",
+                    "trtype",
+                    "ref"
+                ]
+            }
+        ],
+        "stcommission": [
+            {
+                "name": "fk_stcommission_stunits",
+                "ref_table": "stunits",
+                "cols": [
+                    "itemno",
+                    "unicode"
+                ],
+                "ref_cols": [
+                    "itemno",
+                    "unicode"
+                ]
+            }
+        ],
+        "stdtl": [
+            {
+                "name": "fk_stdtl_sthdr",
+                "ref_table": "sthdr",
+                "cols": [
+                    "branch",
+                    "trtype",
+                    "ref"
+                ],
+                "ref_cols": [
+                    "branch",
+                    "trtype",
+                    "ref"
+                ]
+            }
+        ],
+        "stfcyprice": [
+            {
+                "name": "fk_stfcyprice_stunits",
+                "ref_table": "stunits",
+                "cols": [
+                    "itemno",
+                    "unicode"
+                ],
+                "ref_cols": [
+                    "itemno",
+                    "unicode"
+                ]
+            }
+        ],
+        "stfcyprice_bc": [
+            {
+                "name": "fk_stfcyprice_bc_stitembc",
+                "ref_table": "stitembc",
+                "cols": [
+                    "pbarcode"
+                ],
+                "ref_cols": [
+                    "pbarcode"
+                ]
+            }
+        ],
+        "stitembc": [
+            {
+                "name": "fk_stitembc_stunits",
+                "ref_table": "stunits",
+                "cols": [
+                    "itemno",
+                    "unicode"
+                ],
+                "ref_cols": [
+                    "itemno",
+                    "unicode"
+                ]
+            }
+        ],
+        "stitemnqati": [
+            {
+                "name": "fk_stitemnqati_stunits",
+                "ref_table": "stunits",
+                "cols": [
+                    "cmbkey"
+                ],
+                "ref_cols": [
+                    "cmbkey"
+                ]
+            }
+        ],
+        "stitemrp": [
+            {
+                "name": "fk_stitemrp_stunits",
+                "ref_table": "stunits",
+                "cols": [
+                    "itemno",
+                    "unicode"
+                ],
+                "ref_cols": [
+                    "itemno",
+                    "unicode"
+                ]
+            }
+        ],
+        "stitemsrlno": [
+            {
+                "name": "fk_stitemsrlno_stunits",
+                "ref_table": "stunits",
+                "cols": [
+                    "itemno",
+                    "unicode"
+                ],
+                "ref_cols": [
+                    "itemno",
+                    "unicode"
+                ]
+            }
+        ],
+        "stitmphoto": [
+            {
+                "name": "fk_stitmphoto_stunits",
+                "ref_table": "stunits",
+                "cols": [
+                    "itemno",
+                    "unicode"
+                ],
+                "ref_cols": [
+                    "itemno",
+                    "unicode"
+                ]
+            }
+        ],
+        "stoffer_grp_dt": [
+            {
+                "name": "fk_stoffer_grp_dt_stoffer_grp_hd",
+                "ref_table": "stoffer_grp_hd",
+                "cols": [
+                    "grp_no"
+                ],
+                "ref_cols": [
+                    "grp_no"
+                ]
+            }
+        ],
+        "stoffers": [
+            {
+                "name": "fk_stoffers_stoffers_main",
+                "ref_table": "stoffers_main",
+                "cols": [
+                    "company",
+                    "slcenter",
+                    "offer_no"
+                ],
+                "ref_cols": [
+                    "company",
+                    "slcenter",
+                    "offer_no"
+                ]
+            },
+            {
+                "name": "fk_stoffers_stunits",
+                "ref_table": "stunits",
+                "cols": [
+                    "itemno",
+                    "unicode"
+                ],
+                "ref_cols": [
+                    "itemno",
+                    "unicode"
+                ]
+            }
+        ],
+        "stoffers_dt": [
+            {
+                "name": "fk_stoffers_dt_stoffers",
+                "ref_table": "stoffers",
+                "cols": [
+                    "company",
+                    "slcenter",
+                    "offer_no",
+                    "ms_barcode"
+                ],
+                "ref_cols": [
+                    "company",
+                    "slcenter",
+                    "offer_no",
+                    "barcode"
+                ]
+            }
+        ],
+        "streorderqp": [
+            {
+                "name": "fk_streorderqp_stunits",
+                "ref_table": "stunits",
+                "cols": [
+                    "itemno",
+                    "unicode"
+                ],
+                "ref_cols": [
+                    "itemno",
+                    "unicode"
+                ]
+            }
+        ],
+        "stsrlno_dt": [
+            {
+                "name": "fk_stsrlno_dt_stsrlno_dt",
+                "ref_table": "stdtl",
+                "cols": [
+                    "branch",
+                    "trtype",
+                    "ref",
+                    "folio"
+                ],
+                "ref_cols": [
+                    "branch",
+                    "trtype",
+                    "ref",
+                    "folio"
+                ]
+            }
+        ],
+        "stwmaloc_dt": [
+            {
+                "name": "fk_stwmaloc_dt_stwmaloc_hd",
+                "ref_table": "stwmaloc_hd",
+                "cols": [
+                    "branch",
+                    "alctype",
+                    "alcref"
+                ],
+                "ref_cols": [
+                    "branch",
+                    "alctype",
+                    "alcref"
+                ]
+            }
+        ],
+        "stwmcntnr_dt": [
+            {
+                "name": "fk_stwmcntnr_dt_stwmcntnr_hd",
+                "ref_table": "stwmcntnr_hd",
+                "cols": [
+                    "cn_id"
+                ],
+                "ref_cols": [
+                    "cn_id"
+                ]
+            }
+        ],
+        "stwmcntnrtrx_dt": [
+            {
+                "name": "fk_stwmcntntrx_dt_stwmcntnrtrx_hd",
+                "ref_table": "stwmcntnrtrx_hd",
+                "cols": [
+                    "branch",
+                    "ref"
+                ],
+                "ref_cols": [
+                    "branch",
+                    "ref"
+                ]
+            }
+        ],
+        "stwmtrx_dt": [
+            {
+                "name": "fk_stwmtrx_dt_stwmtrx_hd",
+                "ref_table": "stwmtrx_hd",
+                "cols": [
+                    "branch",
+                    "trtype",
+                    "ref"
+                ],
+                "ref_cols": [
+                    "branch",
+                    "trtype",
+                    "ref"
+                ]
+            }
+        ],
+        "tailor_fix_dt": [
+            {
+                "name": "fk_tailor_fix_dt_tailor_fix_hd",
+                "ref_table": "tailor_fix_hd",
+                "cols": [
+                    "company",
+                    "ref"
+                ],
+                "ref_cols": [
+                    "company",
+                    "ref"
+                ]
+            }
+        ],
+        "tailor_ord_dt": [
+            {
+                "name": "fk_tailor_ord_dt_tailor_ord_hd",
+                "ref_table": "tailor_ord_hd",
+                "cols": [
+                    "company",
+                    "ref"
+                ],
+                "ref_cols": [
+                    "company",
+                    "ref"
+                ]
+            }
+        ],
+        "tailor_rtrn_dt": [
+            {
+                "name": "fk_tailor_rtrn_dt_tailor_rtrn_hd",
+                "ref_table": "tailor_rtrn_hd",
+                "cols": [
+                    "company",
+                    "ref"
+                ],
+                "ref_cols": [
+                    "company",
+                    "ref"
+                ]
+            }
+        ],
+        "tailor_trans_dt": [
+            {
+                "name": "fk_tailor_trans_dt_tailor_trans_hd",
+                "ref_table": "tailor_trans_hd",
+                "cols": [
+                    "company",
+                    "transtype",
+                    "ref"
+                ],
+                "ref_cols": [
+                    "company",
+                    "transtype",
+                    "ref"
+                ]
+            }
+        ],
+        "tkdrvrexpnse_dt": [
+            {
+                "name": "fk_tkdrvrexpnse_dt_tkdrvrexpnse_hd",
+                "ref_table": "tkdrvrexpnse_hd",
+                "cols": [
+                    "company",
+                    "cnt_ref"
+                ],
+                "ref_cols": [
+                    "company",
+                    "cnt_ref"
+                ]
+            }
+        ],
+        "tktranscost_dt": [
+            {
+                "name": "fk_tktranscost_dt_tktranscost_hd",
+                "ref_table": "tktranscost_hd",
+                "cols": [
+                    "company",
+                    "cnt_ref"
+                ],
+                "ref_cols": [
+                    "company",
+                    "cnt_ref"
+                ]
+            }
+        ],
+        "vender_dtl": [
+            {
+                "name": "fk_vender_dtl_supplier",
+                "ref_table": "supplier",
+                "cols": [
+                    "vn_company",
+                    "vn_code",
+                    "vn_fcy"
+                ],
+                "ref_cols": [
+                    "cu_company",
+                    "cu_code",
+                    "cf_fcy"
+                ]
+            }
+        ]
+    }
+}
