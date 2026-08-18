@@ -60,10 +60,10 @@ CREATE TABLE gold.dim_product (
     item_code           VARCHAR(16)     NOT NULL,       -- Natural key (silver.stock_item.itemno)
     item_name           VARCHAR(45),                    -- Primary item name
     item_name_alt       VARCHAR(40),                    -- Alternative language name
-    main_group          VARCHAR(50),                    -- Vehicle Make & Model (e.g. 'Hyundai Sonata')
-    sub_group           VARCHAR(30),                    -- Origin / Quality (e.g. 'Genuine', 'Korean', 'Chinese')
-    category            VARCHAR(80),                    -- Part Category (e.g. 'Shock Absorber & Strut / مساعدات')
-    classification_key  VARCHAR(60),                    -- Vehicle System (e.g. 'Suspension & Steering')
+    vehicle_make_model  VARCHAR(50),                    -- Vehicle Make & Model (e.g. 'Hyundai Sonata')
+    origin_quality      VARCHAR(30),                    -- Origin / Quality (e.g. 'Genuine', 'Korean', 'Chinese')
+    part_category       VARCHAR(80),                    -- Part Category (e.g. 'Shock Absorber & Strut / مساعدات')
+    vehicle_system      VARCHAR(60),                    -- Vehicle System (e.g. 'Suspension & Steering')
     item_type           VARCHAR(1)                      -- Item Type (e.g., Stock, Service, Asset)
 );
 

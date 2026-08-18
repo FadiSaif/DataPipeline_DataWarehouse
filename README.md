@@ -19,7 +19,7 @@ flowchart LR
     end
 
     subgraph Silver [Silver Layer - Cleaned & Conformed]
-        S[(silver.*\nRenamed Tables\nPK/FK Constraints\nDeduplicated)]
+        S[(silver.*\nRenamed Tables\nPK/FK Constraints\nDeduplicated\nEnriched Catalog)]
     end
 
     subgraph Gold [Gold Layer - Dimensional Model]
@@ -42,25 +42,30 @@ flowchart LR
   * [`01. bronze_layer/ingest_mssql_to_postgres.py`](01.%20bronze_layer/ingest_mssql_to_postgres.py): Memory-efficient chunked batch streamer.
   * [`01. bronze_layer/bronze_layer_ddl.sql`](01.%20bronze_layer/bronze_layer_ddl.sql): DDL for raw staging tables.
 
-### 🥈 2. Silver Layer (Cleaned & Conformed)
-* **Purpose**: Applies semantic snake_case naming conventions, resolves duplicates, standardizes data types, and enforces native ERP relational constraints.
+### 🥈 2. Silver Layer (Cleaned, Conformed & Enriched)
+* **Purpose**: Applies semantic snake_case naming conventions, resolves duplicates, standardizes data types, enforces native ERP relational constraints, and performs in-place NLP catalog enrichment.
 * **Key Features**:
   * Systematic column and table renaming across 54+ entities mapped via [`rename_map.json`](rename_map.json).
   * `DISTINCT ON` deduplication preserving the latest archive snapshots.
   * Native ERP Primary Key and Foreign Key constraints (applied as `NOT VALID` where appropriate to accommodate legacy orphaned rows).
+  * **Product Catalog NLP / Text Classification**: Over 22,000 spare parts parsed by Arabic description and OEM part numbering conventions to classify:
+    * **Vehicle Make & Model** (`vehicle_make_model`: e.g. *Hyundai Elantra, Sonata, Accent, Tucson, Santa Fe, Kia Soul, Rio, Optima/K5...*)
+    * **Origin / Quality** (`origin_quality`: *Genuine OEM, Korean [K], Chinese [C], Other*)
+    * **Unified Part Category** (`part_category`: *Control Arm, Brake Pads, Sway Bar Link, Shock Absorbers...* unifying Left/Right and Front/Rear counterparts)
+    * **Vehicle System** (`vehicle_system`: *Suspension & Steering, Brake System, Engine & Mechanical, Cooling, Electrical, HVAC, Transmission, Body...*)
 * **Key Scripts**:
+  * [`02. silver_layer/silver_layer_ddl.sql`](02.%20silver_layer/silver_layer_ddl.sql)
   * [`02. silver_layer/01_rename_and_load_silver.sql`](02.%20silver_layer/01_rename_and_load_silver.sql)
   * [`02. silver_layer/02_native_silver_constraints.sql`](02.%20silver_layer/02_native_silver_constraints.sql)
+  * [`02. silver_layer/03_enrich_stock_item.sql`](02.%20silver_layer/03_enrich_stock_item.sql)
 
 ### 🥇 3. Gold Layer (Star Schema & Business Analytics)
-* **Purpose**: Pure Kimball-style Dimensional Model optimized for BI tools (Power BI, Tableau) and high-performance SQL analytics.
+* **Purpose**: Pure Kimball-style Dimensional Model optimized for BI tools (Power BI, Tableau) and high-performance SQL analytics. Sourced directly from enriched Silver tables with zero hardcoded transformation logic.
 * **Currency Normalization**: All prices, costs, and discounts are standardized to **SAR (Saudi Riyal)**:
   $$\text{Price}_{\text{SAR}} = \text{Price} \times \begin{cases} 0.002421307506053 & \text{if Currency} = \text{'01' (YER)} \\ 3.8 & \text{if Currency} = \text{'02' (USD)} \\ 1.0 & \text{if Currency} = \text{'03' (SAR) or Local} \end{cases}$$
-* **Product Catalog NLP / Text Classification**: Over 22,000 spare parts parsed by Arabic description and OEM part numbering conventions to classify:
-  * **Vehicle Make & Model** (e.g. *Hyundai Elantra, Sonata, Accent, Tucson, Santa Fe, Kia Soul, Rio, Optima/K5...*)
-  * **Origin / Quality** (*Genuine OEM, Korean [K], Chinese [C], Other*)
-  * **Unified Part Category** (*Control Arm, Brake Pads, Sway Bar Link, Shock Absorbers...* unifying Left/Right and Front/Rear counterparts)
-  * **Vehicle System** (*Suspension & Steering, Brake System, Engine & Mechanical, Cooling, Electrical, HVAC, Transmission, Body...*)
+* **Key Scripts**:
+  * [`03. gold_layer/gold_layer_ddl.sql`](03.%20gold_layer/gold_layer_ddl.sql)
+  * [`03. gold_layer/gold_layer_load.sql`](03.%20gold_layer/gold_layer_load.sql)
 
 ---
 
@@ -108,10 +113,10 @@ erDiagram
         VARCHAR item_code
         VARCHAR item_name
         VARCHAR item_name_alt
-        VARCHAR main_group "Vehicle Model"
-        VARCHAR sub_group "Part Origin"
-        VARCHAR category "Part Category"
-        VARCHAR classification_key "Vehicle System"
+        VARCHAR vehicle_make_model "Vehicle Model"
+        VARCHAR origin_quality "Part Origin"
+        VARCHAR part_category "Part Category"
+        VARCHAR vehicle_system "Vehicle System"
         VARCHAR item_type
     }
 
@@ -175,7 +180,7 @@ erDiagram
 
 ## 📈 Sample Business & Analytics Queries
 
-### 1. Market Basket Analysis (Items per Order & Basket Value)
+### 1. Market Basket & Payment Method Analysis
 ```sql
 SELECT 
     dso.payment_mode,
@@ -193,13 +198,13 @@ ORDER BY total_revenue_sar DESC;
 ### 2. Top Revenue by Vehicle Make & Model
 ```sql
 SELECT 
-    dp.main_group AS vehicle_model,
+    dp.vehicle_make_model AS vehicle_model,
     COUNT(f.fact_sales_key) AS items_sold,
     ROUND(SUM(f.line_total_sar), 2) AS total_revenue_sar,
     ROUND(AVG(f.unit_price_sar), 2) AS avg_unit_price_sar
 FROM gold.fact_sales f
 JOIN gold.dim_product dp ON f.product_key = dp.product_key
-GROUP BY dp.main_group
+GROUP BY dp.vehicle_make_model
 ORDER BY total_revenue_sar DESC
 LIMIT 10;
 ```
@@ -207,43 +212,51 @@ LIMIT 10;
 ### 3. Sales Volume & Margin by Part Origin (Genuine vs. Aftermarket)
 ```sql
 SELECT 
-    dp.sub_group AS origin,
+    dp.origin_quality AS origin,
     COUNT(f.fact_sales_key) AS line_items_sold,
     ROUND(SUM(f.line_total_sar), 2) AS total_revenue_sar,
     ROUND(AVG(f.unit_price_sar), 2) AS avg_price_sar
 FROM gold.fact_sales f
 JOIN gold.dim_product dp ON f.product_key = dp.product_key
-GROUP BY dp.sub_group
+GROUP BY dp.origin_quality
 ORDER BY total_revenue_sar DESC;
 ```
 
 ---
 
-## 🚀 Deployment & Execution Guide
+## 🚀 Unified Pipeline Orchestration
 
-### Prerequisites
-* PostgreSQL 14+
-* Python 3.10+ (with `psycopg2`, `pandas`, `pyodbc`)
+The entire Bronze → Silver → Gold ETL workflow is orchestrated seamlessly with a single Python command with built-in transaction management, timing, and 14 automated verification checks.
 
-### Execution Order
-1. **Initialize Schemas**:
-   ```sql
-   \i create_schema.sql
-   ```
-2. **Deploy Bronze Layer**:
-   ```sql
-   \i 01. bronze_layer/bronze_layer_ddl.sql
-   ```
-3. **Deploy Silver Layer (Renaming & Native Constraints)**:
-   ```sql
-   \i 02. silver_layer/01_rename_and_load_silver.sql
-   \i 02. silver_layer/02_native_silver_constraints.sql
-   ```
-4. **Deploy Gold Layer (Star Schema & Classification)**:
-   ```sql
-   \i 03. gold_layer/gold_layer_ddl.sql
-   \i 03. gold_layer/gold_layer_load.sql
-   ```
+### One-Command Execution
+```bash
+# Run complete end-to-end pipeline (auto-skips bronze if MSSQL is unreachable)
+python run_pipeline.py
+
+# Run transformations on existing bronze data (Silver -> Gold)
+python run_pipeline.py --skip-bronze
+
+# Rebuild only the Silver layer (DDL, Load, Constraints, Enrichment)
+python run_pipeline.py --silver-only
+
+# Rebuild only the Gold Dimensional layer (DDL, Load)
+python run_pipeline.py --gold-only
+
+# Inspect execution plan without modifying database
+python run_pipeline.py --dry-run
+```
+
+### Pipeline Execution Order & Verification
+1. **Create Schemas**: Idempotent setup for `bronze`, `silver`, and `gold`.
+2. **Bronze DDL**: Staging table definitions.
+3. **Bronze Ingest**: Stream legacy SQL Server tables to PostgreSQL (auto-skipped if MSSQL is offline).
+4. **Silver DDL**: Clean table structures.
+5. **Silver Load & Rename**: `01_rename_and_load_silver.sql` deduplicates raw data and applies snake_case schemas.
+6. **Silver Constraints**: `02_native_silver_constraints.sql` enforces Primary and Foreign Keys.
+7. **Silver Enrichment**: `03_enrich_stock_item.sql` classifies all 22k+ items with Vehicle Model, Origin, Category, and Vehicle System.
+8. **Gold DDL**: `gold_layer_ddl.sql` sets up the Star Schema with foreign keys.
+9. **Gold Load**: `gold_layer_load.sql` sources directly from enriched Silver tables, converting all financial metrics to SAR.
+10. **Automated Verification**: Runs 14 automated integrity and row-count checks (0 nulls, 0 orphan facts).
 
 ---
 
@@ -251,6 +264,7 @@ ORDER BY total_revenue_sar DESC;
 
 ```
 .
+├── run_pipeline.py                     # Single-command pipeline orchestrator
 ├── create_database.sql                 # Database creation
 ├── create_schema.sql                   # Medallion schemas setup (bronze, silver, gold)
 ├── rename_map.json                     # Semantic renaming mappings for 54+ tables
@@ -259,13 +273,15 @@ ORDER BY total_revenue_sar DESC;
 │   ├── ingest_mssql_to_postgres.py     # Batch data extractor from SQL Server
 │   └── truncate_bronze.sql             # Staging cleanup
 ├── 02. silver_layer/
+│   ├── silver_layer_ddl.sql            # Silver layer DDL
 │   ├── 01_rename_and_load_silver.sql   # Silver ELT transform & load script
 │   ├── 02_native_silver_constraints.sql# Native ERP PK/FK constraint definitions
-│   └── silver_layer_ddl.sql            # Silver layer DDL
+│   └── 03_enrich_stock_item.sql        # NLP & regex product classification enrichment
 └── 03. gold_layer/
     ├── gold_layer_ddl.sql              # Star Schema DDL (Option 3: Header Dim + Line Fact)
-    ├── gold_layer_load.sql             # Automated Gold ELT loader with product NLP classifier
-    └── products.csv                    # Cleaned & classified product catalog (22k+ items)
+    ├── gold_layer_load.sql             # Automated Gold ELT loader (reads from enriched Silver)
+    ├── item_basket.sql                 # Market basket analytics
+    └── pareto_analysis.sql             # ABC/Pareto 80/20 sales analysis
 ```
 
 ---
