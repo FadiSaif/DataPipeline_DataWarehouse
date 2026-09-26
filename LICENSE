@@ -1,14 +1,21 @@
-Proprietary & Confidential License
+MIT License
 
-Copyright (c) 2026 Fadi Saif & Hyundai Bin Abdulwali. All rights reserved.
+Copyright (c) 2026 Fadi Saif
 
-This software, source code, data schemas, pipeline architecture, and associated documentation are the proprietary and confidential property of Fadi Saif.
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
 
-All underlying business data, transaction records, and enterprise datasets are the exclusive, proprietary, and confidential property of Hyundai Bin Abdulwali.
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
 
-TERMS & CONDITIONS:
-
-1. PROPRIETARY RIGHTS: All intellectual property rights in this software, code, models, and data are reserved by Fadi Saif and Hyundai Bin Abdulwali.
-2. RESTRICTIONS ON USE: No part of this software, documentation, or data may be reproduced, copied, modified, merged, published, distributed, sublicensed, sold, disclosed, or transferred in any form or by any means, electronic or mechanical, without express prior written permission from the copyright holders.
-3. CONFIDENTIALITY: Any unauthorized viewing, copying, downloading, distribution, or disclosure of the data or source code is strictly prohibited.
-4. NO WARRANTY: THIS SOFTWARE AND DATA ARE PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT, OR OTHERWISE, ARISING FROM, OUT OF, OR IN CONNECTION WITH THE SOFTWARE, DATA, OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.

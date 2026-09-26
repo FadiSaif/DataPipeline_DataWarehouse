@@ -288,4 +288,7 @@ python run_pipeline.py --dry-run
 
 ## 📄 License
 
-This project and its pipeline source code are proprietary to **Fadi Saif**. All underlying business data and transaction records are proprietary and confidential to **Hyundai Bin Abdulwali**. See the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+> **Note on Data Privacy**: All proprietary enterprise datasets, customer records, and transaction data belong to Hyundai Bin Abdulwali and have been strictly excluded from this repository.
+
