@@ -1,9 +1,13 @@
 import json
 import os
+from pathlib import Path
 
-dict_file = "rename_map.json"
-const_file = "C:/Users/HP/OneDrive/Documents/02. Data Science/04. Data Engineering/01. Projects/01. Data Pipeline - Data Warehouse/02. silver_layer/extracted_mssql_constraints.json"
-out_sql = "C:/Users/HP/OneDrive/Documents/02. Data Science/04. Data Engineering/01. Projects/01. Data Pipeline - Data Warehouse/02. silver_layer/02_native_silver_constraints.sql"
+DIR_PATH = Path(__file__).resolve().parent
+PROJECT_ROOT = DIR_PATH.parent
+
+dict_file = PROJECT_ROOT / "rename_map.json"
+const_file = DIR_PATH / "extracted_mssql_constraints.json"
+out_sql = DIR_PATH / "02_native_silver_constraints.sql"
 
 def get_clean_col_name(orig_table, col_name):
     # Match the logic in build_sql.py exactly

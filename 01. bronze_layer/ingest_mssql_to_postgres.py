@@ -1,3 +1,4 @@
+import os
 import pyodbc
 import psycopg2
 import csv
@@ -6,16 +7,16 @@ import sys
 
 # ==============================================================================
 # CONFIGURATION 
-# Replace these placeholders with your actual credentials and IPs
+# Reads connection parameters from environment variables or uses default placeholders
 # ==============================================================================
-MSSQL_IP = "192.168.1.100"
-MSSQL_USER = "sa"
-MSSQL_PASS = "123"
+MSSQL_IP = os.getenv("MSSQL_HOST", "localhost")
+MSSQL_USER = os.getenv("MSSQL_USER", "sa")
+MSSQL_PASS = os.getenv("MSSQL_PASSWORD", "password")
 
-PG_IP = "192.168.1.100"
-PG_USER = "postgres"
-PG_PASS = "123"
-PG_DB = "sales_DataWarehouse"
+PG_IP = os.getenv("PG_HOST", "localhost")
+PG_USER = os.getenv("PG_USER", "postgres")
+PG_PASS = os.getenv("PG_PASSWORD", "postgres")
+PG_DB = os.getenv("PG_DB", "sales_DataWarehouse")
 
 # Chunk size for fetching data (prevents Out Of Memory errors)
 CHUNK_SIZE = 5000

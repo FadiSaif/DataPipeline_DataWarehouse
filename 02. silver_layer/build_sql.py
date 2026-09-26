@@ -1,5 +1,6 @@
 import json
 import os
+from pathlib import Path
 
 # ============================================================================
 # This script generates the Silver Layer ETL SQL script.
@@ -63,12 +64,20 @@ table_remaps = {
     "taxlog": "tax_log"
 }
 
-out_sql = "C:/Users/HP/OneDrive/Documents/02. Data Science/04. Data Engineering/01. Projects/01. Data Pipeline - Data Warehouse/02. silver_layer/01_rename_and_load_silver.sql"
+DIR_PATH = Path(__file__).resolve().parent
+PROJECT_ROOT = DIR_PATH.parent
+
+out_sql = DIR_PATH / "01_rename_and_load_silver.sql"
 
 def get_columns_from_pg():
     """Query PostgreSQL directly to get actual column lists from bronze tables."""
     import psycopg2
-    conn = psycopg2.connect(host="192.168.1.100", user="postgres", password="123", dbname="sales_DataWarehouse")
+    conn = psycopg2.connect(
+        host=os.getenv("PG_HOST", "localhost"),
+        user=os.getenv("PG_USER", "postgres"),
+        password=os.getenv("PG_PASSWORD", "postgres"),
+        dbname=os.getenv("PG_DB", "sales_DataWarehouse")
+    )
     cursor = conn.cursor()
     
     schema_data = {}
@@ -110,7 +119,7 @@ def generate_script():
     schema_data = get_columns_from_pg()
     
     # 1. Output a shared rename map for constraints script
-    with open('rename_map.json', 'w') as f:
+    with open(PROJECT_ROOT / 'rename_map.json', 'w') as f:
         json.dump(table_remaps, f, indent=4)
 
     with open(out_sql, 'w', encoding='utf-8') as f:
@@ -146,7 +155,7 @@ def generate_script():
         # ---------------------------------------------------------------
         # PHASE 2: FULL DATA LOAD FROM BRONZE (DEDUPLICATED)
         # ---------------------------------------------------------------
-        const_file = "C:/Users/HP/OneDrive/Documents/02. Data Science/04. Data Engineering/01. Projects/01. Data Pipeline - Data Warehouse/02. silver_layer/extracted_mssql_constraints.json"
+        const_file = DIR_PATH / "extracted_mssql_constraints.json"
         with open(const_file, "r") as cf:
             native_schema = json.load(cf)
         native_pks = native_schema.get("primary_keys", {})

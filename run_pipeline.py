@@ -48,17 +48,17 @@ import psycopg2
 PROJECT_ROOT = Path(__file__).resolve().parent
 
 PG_CONFIG = {
-    "host": "localhost",
-    "port": 5432,
-    "user": "postgres",
-    "password": "123",
-    "dbname": "sales_DataWarehouse",
+    "host": os.getenv("PG_HOST", "localhost"),
+    "port": int(os.getenv("PG_PORT", 5432)),
+    "user": os.getenv("PG_USER", "postgres"),
+    "password": os.getenv("PG_PASSWORD", "postgres"),
+    "dbname": os.getenv("PG_DB", "sales_DataWarehouse"),
 }
 
 MSSQL_CONFIG = {
-    "host": "192.168.1.100",
-    "user": "sa",
-    "password": "123",
+    "host": os.getenv("MSSQL_HOST", "localhost"),
+    "user": os.getenv("MSSQL_USER", "sa"),
+    "password": os.getenv("MSSQL_PASSWORD", "password"),
 }
 
 # SQL file paths relative to PROJECT_ROOT

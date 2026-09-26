@@ -1,21 +1,89 @@
-# Python
+# =============================================================================
+# DATA PROTECTION & SECURITY (.gitignore)
+# Ensures zero proprietary business data, dumps, logs, or secrets reach GitHub.
+# =============================================================================
+
+# 1. Proprietary Data Exports & Datasets
+*.csv
+*.tsv
+*.parquet
+*.feather
+*.orc
+*.avro
+*.xlsx
+*.xls
+*.ods
+*.dat
+*.dump
+*.bak
+*.sql.gz
+*.tar.gz
+*.zip
+*.7z
+*.rar
+
+# Specific data files and row counts
+bronze_tableRows
+silver_tableRows*
+vw_sales*
+pareto*
+*tableRows*
+
+# 2. Database Dumps & Query Output Files
+query_log.sql
+*.query
+*.dump
+*.backup
+*.rdb
+
+# 3. Execution Logs & Error Dumps (Contains internal traces, paths, or connection logs)
+00. error_log/
+logs/
+*.log
+*.txt
+!requirements.txt
+!LICENSE.txt
+!README.txt
+
+# 4. Screenshots & Images (Prevents leaking dashboard figures, query outputs, or customer details)
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.bmp
+*.webp
+*.tiff
+
+# 5. Environment Variables & Secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.cert
+*.crt
+credentials.json
+secrets.json
+
+# 6. Python Environments & Bytecode
 __pycache__/
 *.py[cod]
 *$py.class
+*.so
+.Python
 .venv/
 env/
 venv/
+ENV/
+build/
+dist/
+*.egg-info/
 
-# IDE
+# 7. IDE & OS Metadata
 .vscode/
 .idea/
-
-# Logs & Temporary files
-logs/
-*.log
-constraint_run.txt
-silver_run.txt
-
-# OS
+*.sublime-workspace
+*.sublime-project
 .DS_Store
 Thumbs.db
+Desktop.ini

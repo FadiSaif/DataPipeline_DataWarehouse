@@ -1,9 +1,10 @@
+import os
 import pyodbc
 import json
 
-MSSQL_IP = "192.168.1.100"
-MSSQL_USER = "sa"
-MSSQL_PASS = "123"
+MSSQL_IP = os.getenv("MSSQL_HOST", "localhost")
+MSSQL_USER = os.getenv("MSSQL_USER", "sa")
+MSSQL_PASS = os.getenv("MSSQL_PASSWORD", "password")
 
 def extract_constraints():
     conn_str = (
